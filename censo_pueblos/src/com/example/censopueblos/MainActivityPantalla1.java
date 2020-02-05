@@ -36441,7 +36441,6 @@ public class MainActivityPantalla1 extends Activity {
 					op52a_1="sin datos";
 					
 					muestraEstadisticas();
-					
 
 				}
 
