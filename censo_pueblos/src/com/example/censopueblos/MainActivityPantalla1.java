@@ -56,7 +56,7 @@ import android.widget.Toast;
 
 public class MainActivityPantalla1 extends Activity {
 
-	private static final String LOG_TAG = "Grabadora";
+	private static final String LOG_TAG = "Pantalla 1";
 	private MediaRecorder mediaRecorder;
 	private MediaPlayer mediaPlayer;
 
@@ -11130,6 +11130,80 @@ public class MainActivityPantalla1 extends Activity {
 					}
 					
 					
+					lay19_1.setVisibility(View.GONE);
+					lay19a_1.setVisibility(View.GONE);
+					lay19b_1.setVisibility(View.GONE);
+					lay19c_1.setVisibility(View.GONE);
+					lay19d_1.setVisibility(View.GONE);
+					lay19e_1.setVisibility(View.GONE);
+					lay19f_1.setVisibility(View.GONE);
+					lay19g_1.setVisibility(View.GONE);
+					lay19h_1.setVisibility(View.GONE);
+					
+					lay20_1.setVisibility(View.GONE);
+					lay20a_1.setVisibility(View.GONE);
+					lay20b_1.setVisibility(View.GONE);
+					lay20c_1.setVisibility(View.GONE);
+					lay20d_1.setVisibility(View.GONE);
+					lay20e_1.setVisibility(View.GONE);
+					
+					op19_1="No aplica";
+					op19a_1="No aplica";
+					op19b_1="No aplica";
+					op19c_1="No aplica";
+					op19d_1="No aplica";
+					op19e_1="No aplica";
+					op19f_1="No aplica";
+					op19g_1="No aplica";
+					op19h_1="No aplica";
+					
+					lay192_1.setVisibility(View.GONE);
+					lay193_1.setVisibility(View.GONE);
+					lay193a_1.setVisibility(View.GONE);
+					lay193b_1.setVisibility(View.GONE);
+					lay193c_1.setVisibility(View.GONE);
+					lay193d_1.setVisibility(View.GONE);
+					lay193e_1.setVisibility(View.GONE);
+					lay193f_1.setVisibility(View.GONE);
+					lay193g_1.setVisibility(View.GONE);
+					lay193h_1.setVisibility(View.GONE);
+					
+											
+					op192_1="No aplica";
+					op193_1="No aplica";
+					op193a_1="No aplica";
+					op193b_1="No aplica";
+					op193c_1="No aplica";
+					op193d_1="No aplica";
+					op193e_1="No aplica";
+					op193f_1="No aplica";
+					op193g_1="No aplica";
+					op193h_1="No aplica";
+					
+					op20_1="No aplica";
+					op20a_1="No aplica";
+					op20b_1="No aplica";
+					op20c_1="No aplica";
+					op20d_1="No aplica";
+					op20e_1="No aplica";
+					
+					rdPregunta19_1.clearCheck();
+					rdPregunta19a_1.clearCheck();
+					rdPregunta19b_1.clearCheck();
+					rdPregunta19c_1.clearCheck();
+					rdPregunta19d_1.clearCheck();
+					rdPregunta19e_1.clearCheck();
+					rdPregunta19f_1.clearCheck();
+					rdPregunta19g_1.clearCheck();
+					rdPregunta19h_1.clearCheck();
+					
+					rdPregunta20_1.clearCheck();
+					rdPregunta20a_1.clearCheck();
+					rdPregunta20b_1.clearCheck();
+					rdPregunta20c_1.clearCheck();
+					rdPregunta20d_1.clearCheck();
+					rdPregunta20e_1.clearCheck();
+					
 					rdPregunta18_1.clearCheck();
 				}
 				else if (checkedId == R.id.radio2) {
@@ -11216,6 +11290,81 @@ public class MainActivityPantalla1 extends Activity {
 						editPreguntaCLAS_1.setText("Mayor de 65 Perteneciente a Pueblo Indígena");
 					}
 					
+					
+					lay19_1.setVisibility(View.GONE);
+					lay19a_1.setVisibility(View.GONE);
+					lay19b_1.setVisibility(View.GONE);
+					lay19c_1.setVisibility(View.GONE);
+					lay19d_1.setVisibility(View.GONE);
+					lay19e_1.setVisibility(View.GONE);
+					lay19f_1.setVisibility(View.GONE);
+					lay19g_1.setVisibility(View.GONE);
+					lay19h_1.setVisibility(View.GONE);
+					
+					lay20_1.setVisibility(View.GONE);
+					lay20a_1.setVisibility(View.GONE);
+					lay20b_1.setVisibility(View.GONE);
+					lay20c_1.setVisibility(View.GONE);
+					lay20d_1.setVisibility(View.GONE);
+					lay20e_1.setVisibility(View.GONE);
+					
+					op19_1="No aplica";
+					op19a_1="No aplica";
+					op19b_1="No aplica";
+					op19c_1="No aplica";
+					op19d_1="No aplica";
+					op19e_1="No aplica";
+					op19f_1="No aplica";
+					op19g_1="No aplica";
+					op19h_1="No aplica";
+					
+					lay192_1.setVisibility(View.GONE);
+					lay193_1.setVisibility(View.GONE);
+					lay193a_1.setVisibility(View.GONE);
+					lay193b_1.setVisibility(View.GONE);
+					lay193c_1.setVisibility(View.GONE);
+					lay193d_1.setVisibility(View.GONE);
+					lay193e_1.setVisibility(View.GONE);
+					lay193f_1.setVisibility(View.GONE);
+					lay193g_1.setVisibility(View.GONE);
+					lay193h_1.setVisibility(View.GONE);
+					
+											
+					op192_1="No aplica";
+					op193_1="No aplica";
+					op193a_1="No aplica";
+					op193b_1="No aplica";
+					op193c_1="No aplica";
+					op193d_1="No aplica";
+					op193e_1="No aplica";
+					op193f_1="No aplica";
+					op193g_1="No aplica";
+					op193h_1="No aplica";
+					
+					op20_1="No aplica";
+					op20a_1="No aplica";
+					op20b_1="No aplica";
+					op20c_1="No aplica";
+					op20d_1="No aplica";
+					op20e_1="No aplica";
+					
+					rdPregunta19_1.clearCheck();
+					rdPregunta19a_1.clearCheck();
+					rdPregunta19b_1.clearCheck();
+					rdPregunta19c_1.clearCheck();
+					rdPregunta19d_1.clearCheck();
+					rdPregunta19e_1.clearCheck();
+					rdPregunta19f_1.clearCheck();
+					rdPregunta19g_1.clearCheck();
+					rdPregunta19h_1.clearCheck();
+					
+					rdPregunta20_1.clearCheck();
+					rdPregunta20a_1.clearCheck();
+					rdPregunta20b_1.clearCheck();
+					rdPregunta20c_1.clearCheck();
+					rdPregunta20d_1.clearCheck();
+					rdPregunta20e_1.clearCheck();
+					
 					rdPregunta18_1.clearCheck();
 				}
 				else if (checkedId == R.id.radio2) {
@@ -11267,21 +11416,22 @@ public class MainActivityPantalla1 extends Activity {
 				if (checkedId == R.id.radio1) {
 					op18_1 = "Sí";
 					
-					if(editPreguntaCLAS_1.getText().toString().trim().equals("Ya es beneficiario")){
+					Log.i(LOG_TAG, ">>>>>>>>>> op16_1"+op16_1);
+					Log.i(LOG_TAG, ">>>>>>>>>> op17_1"+op17_1);
+					Log.i(LOG_TAG, ">>>>>>>>>> op18_1"+op18_1);
+					
+					
+					
+					if(op16_1.equals("Sí") || op17_1.equals("Sí")|| op18_1.equals("Sí")){
 						
-					}else{
-						editPreguntaCLAS_1.setText("Mayor de 65 Perteneciente a Pueblo Indígena");
-					}
-					
-					
-					
-					List<String> saltoAdulto = new ArrayList<String>();
-					if(op16_1.equals("No")){saltoAdulto.add(op16_1);}
-					if(op17_1.equals("No")){saltoAdulto.add(op17_1);}
-					if(op18_1.equals("No")){saltoAdulto.add(op18_1);}
-					
-//					Toast.makeText(getBaseContext(),"SALTO ADULTO:  " +  saltoAdulto.size(),Toast.LENGTH_LONG).show();
-					if(saltoAdulto.size()==3){
+						Log.i(LOG_TAG, ">>>>>>>>>> entro");
+						
+						if(editPreguntaCLAS_1.getText().toString().trim().equals("Ya es beneficiario")){
+							
+						}else{
+							editPreguntaCLAS_1.setText("Mayor de 65 Perteneciente a Pueblo Indígena");
+						}
+						
 						
 						lay19_1.setVisibility(View.GONE);
 						lay19a_1.setVisibility(View.GONE);
@@ -11310,6 +11460,29 @@ public class MainActivityPantalla1 extends Activity {
 						op19g_1="No aplica";
 						op19h_1="No aplica";
 						
+						lay192_1.setVisibility(View.GONE);
+						lay193_1.setVisibility(View.GONE);
+						lay193a_1.setVisibility(View.GONE);
+						lay193b_1.setVisibility(View.GONE);
+						lay193c_1.setVisibility(View.GONE);
+						lay193d_1.setVisibility(View.GONE);
+						lay193e_1.setVisibility(View.GONE);
+						lay193f_1.setVisibility(View.GONE);
+						lay193g_1.setVisibility(View.GONE);
+						lay193h_1.setVisibility(View.GONE);
+						
+												
+						op192_1="No aplica";
+						op193_1="No aplica";
+						op193a_1="No aplica";
+						op193b_1="No aplica";
+						op193c_1="No aplica";
+						op193d_1="No aplica";
+						op193e_1="No aplica";
+						op193f_1="No aplica";
+						op193g_1="No aplica";
+						op193h_1="No aplica";
+						
 						op20_1="No aplica";
 						op20a_1="No aplica";
 						op20b_1="No aplica";
@@ -11334,10 +11507,9 @@ public class MainActivityPantalla1 extends Activity {
 						rdPregunta20d_1.clearCheck();
 						rdPregunta20e_1.clearCheck();
 						
-					
 					}else{
 						
-
+						Log.i(LOG_TAG, ">>>>>>>>>> NO entro");
 						
 						lay19_1.setVisibility(View.VISIBLE);
 						lay19a_1.setVisibility(View.VISIBLE);
@@ -11348,12 +11520,6 @@ public class MainActivityPantalla1 extends Activity {
 						lay19f_1.setVisibility(View.VISIBLE);
 						lay19g_1.setVisibility(View.VISIBLE);
 						lay19h_1.setVisibility(View.VISIBLE);
-						lay20_1.setVisibility(View.VISIBLE);
-						lay20a_1.setVisibility(View.VISIBLE);
-						lay20b_1.setVisibility(View.VISIBLE);
-						lay20c_1.setVisibility(View.VISIBLE);
-						lay20d_1.setVisibility(View.VISIBLE);
-						lay20e_1.setVisibility(View.VISIBLE);
 						
 						op19_1="sin datos";
 						op19a_1="sin datos";
@@ -11364,34 +11530,28 @@ public class MainActivityPantalla1 extends Activity {
 						op19f_1="sin datos";
 						op19g_1="sin datos";
 						op19h_1="sin datos";
-						op20_1="sin datos";
-						op20a_1="sin datos";
-						op20b_1="sin datos";
-						op20c_1="sin datos";
-						op20d_1="sin datos";
-						op20e_1="sin datos";
-						
-						
-					
 					}
 					
-					
-					
-					
-					
-					
+				
 					
 				}
 				else if (checkedId == R.id.radio2) {
 					op18_1 = "No";
 					
-					List<String> saltoAdulto = new ArrayList<String>();
-					if(op16_1.equals("No")){saltoAdulto.add(op16_1);}
-					if(op17_1.equals("No")){saltoAdulto.add(op17_1);}
-					if(op18_1.equals("No")){saltoAdulto.add(op18_1);}
+					Log.i(LOG_TAG, ">>>>>>>>>> op16_1"+op16_1);
+					Log.i(LOG_TAG, ">>>>>>>>>> op17_1"+op17_1);
+					Log.i(LOG_TAG, ">>>>>>>>>> op18_1"+op18_1);
 					
-//					Toast.makeText(getBaseContext(),"SALTO ADULTO:  " +  saltoAdulto.size(),Toast.LENGTH_LONG).show();
-					if(saltoAdulto.size()==3){
+					if(op16_1.equals("Sí") || op17_1.equals("Sí")|| op18_1.equals("Sí")){
+						
+						Log.i(LOG_TAG, ">>>>>>>>>> entro en no");
+						
+						if(editPreguntaCLAS_1.getText().toString().trim().equals("Ya es beneficiario")){
+							
+						}else{
+							editPreguntaCLAS_1.setText("Mayor de 65 Perteneciente a Pueblo Indígena");
+						}
+						
 						
 						lay19_1.setVisibility(View.GONE);
 						lay19a_1.setVisibility(View.GONE);
@@ -11403,6 +11563,13 @@ public class MainActivityPantalla1 extends Activity {
 						lay19g_1.setVisibility(View.GONE);
 						lay19h_1.setVisibility(View.GONE);
 						
+						lay20_1.setVisibility(View.GONE);
+						lay20a_1.setVisibility(View.GONE);
+						lay20b_1.setVisibility(View.GONE);
+						lay20c_1.setVisibility(View.GONE);
+						lay20d_1.setVisibility(View.GONE);
+						lay20e_1.setVisibility(View.GONE);
+						
 						op19_1="No aplica";
 						op19a_1="No aplica";
 						op19b_1="No aplica";
@@ -11413,6 +11580,36 @@ public class MainActivityPantalla1 extends Activity {
 						op19g_1="No aplica";
 						op19h_1="No aplica";
 						
+						lay192_1.setVisibility(View.GONE);
+						lay193_1.setVisibility(View.GONE);
+						lay193a_1.setVisibility(View.GONE);
+						lay193b_1.setVisibility(View.GONE);
+						lay193c_1.setVisibility(View.GONE);
+						lay193d_1.setVisibility(View.GONE);
+						lay193e_1.setVisibility(View.GONE);
+						lay193f_1.setVisibility(View.GONE);
+						lay193g_1.setVisibility(View.GONE);
+						lay193h_1.setVisibility(View.GONE);
+						
+												
+						op192_1="No aplica";
+						op193_1="No aplica";
+						op193a_1="No aplica";
+						op193b_1="No aplica";
+						op193c_1="No aplica";
+						op193d_1="No aplica";
+						op193e_1="No aplica";
+						op193f_1="No aplica";
+						op193g_1="No aplica";
+						op193h_1="No aplica";
+						
+						op20_1="No aplica";
+						op20a_1="No aplica";
+						op20b_1="No aplica";
+						op20c_1="No aplica";
+						op20d_1="No aplica";
+						op20e_1="No aplica";
+						
 						rdPregunta19_1.clearCheck();
 						rdPregunta19a_1.clearCheck();
 						rdPregunta19b_1.clearCheck();
@@ -11422,10 +11619,17 @@ public class MainActivityPantalla1 extends Activity {
 						rdPregunta19f_1.clearCheck();
 						rdPregunta19g_1.clearCheck();
 						rdPregunta19h_1.clearCheck();
-					
+						
+						rdPregunta20_1.clearCheck();
+						rdPregunta20a_1.clearCheck();
+						rdPregunta20b_1.clearCheck();
+						rdPregunta20c_1.clearCheck();
+						rdPregunta20d_1.clearCheck();
+						rdPregunta20e_1.clearCheck();
+						
 					}else{
 						
-
+						Log.i(LOG_TAG, ">>>>>>>>>> NO entro");
 						
 						lay19_1.setVisibility(View.VISIBLE);
 						lay19a_1.setVisibility(View.VISIBLE);
@@ -11447,48 +11651,122 @@ public class MainActivityPantalla1 extends Activity {
 						op19g_1="sin datos";
 						op19h_1="sin datos";
 					}
-					if(editPreguntaCLAS_1.getText().toString().trim().equals("Ya es beneficiario")){
-						
-					}else{
-						editPreguntaCLAS_1.setText("Mayor de 65 Perteneciente a Pueblo Indígena");
-					}
 				}
 				else if (checkedId == R.id.radio0) {
 					op18_1 = "No sabe / No contestó";
 					
-					lay19_1.setVisibility(View.GONE);
-					lay19a_1.setVisibility(View.GONE);
-					lay19b_1.setVisibility(View.GONE);
-					lay19c_1.setVisibility(View.GONE);
-					lay19d_1.setVisibility(View.GONE);
-					lay19e_1.setVisibility(View.GONE);
-					lay19f_1.setVisibility(View.GONE);
-					lay19g_1.setVisibility(View.GONE);
-					lay19h_1.setVisibility(View.GONE);
+					Log.i(LOG_TAG, ">>>>>>>>>> op16_1"+op16_1);
+					Log.i(LOG_TAG, ">>>>>>>>>> op17_1"+op17_1);
+					Log.i(LOG_TAG, ">>>>>>>>>> op18_1"+op18_1);
 					
-					op19_1="No aplica";
-					op19a_1="No aplica";
-					op19b_1="No aplica";
-					op19c_1="No aplica";
-					op19d_1="No aplica";
-					op19e_1="No aplica";
-					op19f_1="No aplica";
-					op19g_1="No aplica";
-					op19h_1="No aplica";
-					
-					rdPregunta19_1.clearCheck();
-					rdPregunta19a_1.clearCheck();
-					rdPregunta19b_1.clearCheck();
-					rdPregunta19c_1.clearCheck();
-					rdPregunta19d_1.clearCheck();
-					rdPregunta19e_1.clearCheck();
-					rdPregunta19f_1.clearCheck();
-					rdPregunta19g_1.clearCheck();
-					rdPregunta19h_1.clearCheck();
-					if(editPreguntaCLAS_1.getText().toString().trim().equals("Ya es beneficiario")){
+					if(op16_1.equals("Sí") || op17_1.equals("Sí")|| op18_1.equals("Sí")){
+						
+						Log.i(LOG_TAG, ">>>>>>>>>> entro en no sabe");
+						
+						if(editPreguntaCLAS_1.getText().toString().trim().equals("Ya es beneficiario")){
+							
+						}else{
+							editPreguntaCLAS_1.setText("Mayor de 65 Perteneciente a Pueblo Indígena");
+						}
+						
+						
+						lay19_1.setVisibility(View.GONE);
+						lay19a_1.setVisibility(View.GONE);
+						lay19b_1.setVisibility(View.GONE);
+						lay19c_1.setVisibility(View.GONE);
+						lay19d_1.setVisibility(View.GONE);
+						lay19e_1.setVisibility(View.GONE);
+						lay19f_1.setVisibility(View.GONE);
+						lay19g_1.setVisibility(View.GONE);
+						lay19h_1.setVisibility(View.GONE);
+						
+						lay20_1.setVisibility(View.GONE);
+						lay20a_1.setVisibility(View.GONE);
+						lay20b_1.setVisibility(View.GONE);
+						lay20c_1.setVisibility(View.GONE);
+						lay20d_1.setVisibility(View.GONE);
+						lay20e_1.setVisibility(View.GONE);
+						
+						op19_1="No aplica";
+						op19a_1="No aplica";
+						op19b_1="No aplica";
+						op19c_1="No aplica";
+						op19d_1="No aplica";
+						op19e_1="No aplica";
+						op19f_1="No aplica";
+						op19g_1="No aplica";
+						op19h_1="No aplica";
+						
+						lay192_1.setVisibility(View.GONE);
+						lay193_1.setVisibility(View.GONE);
+						lay193a_1.setVisibility(View.GONE);
+						lay193b_1.setVisibility(View.GONE);
+						lay193c_1.setVisibility(View.GONE);
+						lay193d_1.setVisibility(View.GONE);
+						lay193e_1.setVisibility(View.GONE);
+						lay193f_1.setVisibility(View.GONE);
+						lay193g_1.setVisibility(View.GONE);
+						lay193h_1.setVisibility(View.GONE);
+						
+												
+						op192_1="No aplica";
+						op193_1="No aplica";
+						op193a_1="No aplica";
+						op193b_1="No aplica";
+						op193c_1="No aplica";
+						op193d_1="No aplica";
+						op193e_1="No aplica";
+						op193f_1="No aplica";
+						op193g_1="No aplica";
+						op193h_1="No aplica";
+						
+						op20_1="No aplica";
+						op20a_1="No aplica";
+						op20b_1="No aplica";
+						op20c_1="No aplica";
+						op20d_1="No aplica";
+						op20e_1="No aplica";
+						
+						rdPregunta19_1.clearCheck();
+						rdPregunta19a_1.clearCheck();
+						rdPregunta19b_1.clearCheck();
+						rdPregunta19c_1.clearCheck();
+						rdPregunta19d_1.clearCheck();
+						rdPregunta19e_1.clearCheck();
+						rdPregunta19f_1.clearCheck();
+						rdPregunta19g_1.clearCheck();
+						rdPregunta19h_1.clearCheck();
+						
+						rdPregunta20_1.clearCheck();
+						rdPregunta20a_1.clearCheck();
+						rdPregunta20b_1.clearCheck();
+						rdPregunta20c_1.clearCheck();
+						rdPregunta20d_1.clearCheck();
+						rdPregunta20e_1.clearCheck();
 						
 					}else{
-						editPreguntaCLAS_1.setText("Mayor de 65 Perteneciente a Pueblo Indígena");
+						
+						Log.i(LOG_TAG, ">>>>>>>>>> NO entro");
+						
+						lay19_1.setVisibility(View.VISIBLE);
+						lay19a_1.setVisibility(View.VISIBLE);
+						lay19b_1.setVisibility(View.VISIBLE);
+						lay19c_1.setVisibility(View.VISIBLE);
+						lay19d_1.setVisibility(View.VISIBLE);
+						lay19e_1.setVisibility(View.VISIBLE);
+						lay19f_1.setVisibility(View.VISIBLE);
+						lay19g_1.setVisibility(View.VISIBLE);
+						lay19h_1.setVisibility(View.VISIBLE);
+						
+						op19_1="sin datos";
+						op19a_1="sin datos";
+						op19b_1="sin datos";
+						op19c_1="sin datos";
+						op19d_1="sin datos";
+						op19e_1="sin datos";
+						op19f_1="sin datos";
+						op19g_1="sin datos";
+						op19h_1="sin datos";
 					}
 				}
 			}

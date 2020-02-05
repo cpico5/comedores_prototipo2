@@ -136,11 +136,13 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_ee" />
+         android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/censo_transparente" />
 
     <EditText
         android:id="@+id/editUsuario"
