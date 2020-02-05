@@ -1,0 +1,127 @@
+     <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/estadisticas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="Salir"
+                tools:context=".MainActivity" >
+                
+                <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <LinearLayout
+                android:id="@+id/lay20c_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical" >
+                
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                
+                <TextView
+                android:id="@+id/textPregunta20c_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/PREGUNTA20c_1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#002266"
+                android:textStyle="bold" />
+                
+                <RadioGroup
+                android:id="@+id/rdPregunta20c_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+  <RadioButton
+  android:id="@+id/radio1"
+  
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:button="@drawable/radiobutton_selector"
+android:textColor="@drawable/radiobutton_color_selector"
+android:textSize="16sp"
+android:theme="@style/RadioButton"
+android:text="En este pueblo o barrio"
+/>
+
+  <RadioButton
+  android:id="@+id/radio2"
+  
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:button="@drawable/radiobutton_selector"
+android:textColor="@drawable/radiobutton_color_selector"
+android:textSize="16sp"
+android:theme="@style/RadioButton"
+android:text="En otra delegación/ alcaldía"
+/>
+
+   <TextView
+                android:id="@+id/textPregunta20c_1e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro estado"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#002266"
+                android:textStyle="bold" />
+  <Spinner
+android:id="@+id/spinner20c_1"
+android:layout_width="259dp"
+android:layout_height="wrap_content"
+android:hint="Selecciona"
+android:layout_marginTop="10dp"
+android:spinnerMode="dialog"
+android:singleLine="false"
+android:layout_marginLeft="10dp" />
+  
+     <TextView
+                android:id="@+id/textPregunta20c_1p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro país"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#002266"
+                android:textStyle="bold" />
+  
+  <Spinner
+android:id="@+id/spinner20c_1p"
+android:layout_width="259dp"
+android:layout_height="wrap_content"
+android:hint="Selecciona"
+android:layout_marginTop="10dp"
+android:spinnerMode="dialog"
+android:singleLine="false"
+android:layout_marginLeft="10dp" />
+
+  <RadioButton
+  android:id="@+id/radio0"
+  
+  
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:button="@drawable/radiobutton_selector"
+android:textColor="@drawable/radiobutton_color_selector"
+android:textSize="16sp"
+android:theme="@style/RadioButton"
+android:text="No sabe / No contestó"
+/>
+
+
+
+
+
+</RadioGroup>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

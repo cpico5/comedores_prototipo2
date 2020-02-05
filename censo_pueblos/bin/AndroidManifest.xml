@@ -1,0 +1,221 @@
+<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.censopueblos"
+    android:versionCode="1"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission 
+    android:name="android.permission.INTERNET"/>
+<uses-permission 
+    android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission 
+    android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+<uses-permission android:name="android.permission.ACCESS_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_GPS" />
+<uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-feature android:name="android.hardware.camera" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.censopueblos.Entrada"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+<category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity 
+            android:name="com.example.censopueblos.MainActivity"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity 
+            android:name="com.example.censopueblos.FotoEvidencia"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+         <activity 
+            android:name="com.example.censopueblos.Menu_Principal"
+            android:screenOrientation="portrait">
+            
+        </activity>
+         <activity android:name="com.example.censopueblos.CalendarViewAudios" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+         <activity android:name="com.example.censopueblos.CalendarViewFotos" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+       
+        <activity android:name="com.example.censopueblos.CalendarViewArchivo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        
+        <activity 
+            android:name="com.example.censopueblos.MainActivityConteo"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        <activity 
+            android:name="com.example.censopueblos.MainActivitySecciones"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        <activity 
+            android:name="com.example.censopueblos.MainActivitySeccionesBorrar"
+            android:screenOrientation="portrait">
+            
+        </activity>
+         <activity 
+            android:name="com.example.censopueblos.MainActivityCarga"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity 
+            android:name="com.example.censopueblos.MainActivityPresidente"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+         <activity 
+            android:name="com.example.censopueblos.MainActivityJefeGobierno"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+          <activity 
+            android:name="com.example.censopueblos.MainActivityDiputado"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+           <activity 
+            android:name="com.example.censopueblos.MainActivityAlianzaMas"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+            <activity 
+            android:name="com.example.censopueblos.MainActivityAlianzaMenos"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.example.censopueblos.MainActivityPantalla1"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+         <activity 
+            android:name="com.example.censopueblos.MainActivityPreguntas"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        
+        <activity 
+            android:name="MainActivityPantallaGUS"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        
+        <activity 
+            android:name="MainActivityPantalla2"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity 
+            android:name="MainActivityPantalla3"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity 
+            android:name="MainActivityPantalla4"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        <activity 
+            android:name="MainActivityPantalla5"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        <activity 
+            android:name="MainActivityPantalla6"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity 
+            android:name="MainActivityPantalla7"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity 
+            android:name="MainActivityPantalla8"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity 
+            android:name="MainActivityPantalla9"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity 
+            android:name="MainActivityPantalla10"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+
+    </application>
+
+</manifest>

@@ -1,0 +1,95 @@
+     <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/estadisticas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="Salir"
+                tools:context=".MainActivity" >
+                
+                <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <LinearLayout
+                android:id="@+id/lay33_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical" >
+                
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                
+                <TextView
+                android:id="@+id/textPregunta33_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/PREGUNTA33_2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#002266"
+                android:textStyle="bold" />
+                
+                <RadioGroup
+                android:id="@+id/rdPregunta33_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+  <RadioButton
+  android:id="@+id/radio1"
+  
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:button="@drawable/radiobutton_selector"
+android:textColor="@drawable/radiobutton_color_selector"
+android:textSize="16sp"
+android:theme="@style/RadioButton"
+android:text="Madre/ Padre"
+/>
+
+  <RadioButton
+  android:id="@+id/radio2"
+  
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:button="@drawable/radiobutton_selector"
+android:textColor="@drawable/radiobutton_color_selector"
+android:textSize="16sp"
+android:theme="@style/RadioButton"
+android:text="Abuela/Abuelo"
+/>
+
+  <RadioButton
+  android:id="@+id/radio0"
+  
+  
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:button="@drawable/radiobutton_selector"
+android:textColor="@drawable/radiobutton_color_selector"
+android:textSize="16sp"
+android:theme="@style/RadioButton"
+android:text="Tutor (a)"
+/>
+
+<EditText
+android:id="@+id/editPregunta33_2"
+android:layout_width="320dp"
+android:layout_height="wrap_content"
+android:layout_marginBottom="30dp"
+android:layout_marginTop="30dp"
+android:ems="10"
+android:hint="Otro"
+android:inputType="text"
+android:textSize="16sp" />
+
+</RadioGroup>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
