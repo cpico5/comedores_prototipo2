@@ -1,0 +1,191 @@
+<?xml version="1.1" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CensoPueblosyBarrios_v5</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="zona">zona</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="noSabe">No Sabe</string>
+    
+    <string name="de_acuerdo">De acuerdo</string>
+    <string name="nide_acuerdo">Ni de acuerdo, ni en desacuerdo</string>
+    <string name="en_desacuerdo">En desacuerdo</string>
+    
+     <string name="mejor">Mejor</string>
+    <string name="igual">Igual</string>
+    <string name="peor">Peor</string>
+    
+     <string name="mucha">Mucha</string>
+    <string name="poca">Poca</string>
+    <string name="ninguna">Ninguna</string>
+   
+    
+    <string name="radio">Radio</string>
+    <string name="television">Televisión</string>
+    <string name="periodico">Periódico</string>
+    <string name="internet">Internet</string>
+    <string name="otro">Otro</string>
+    <string name="otraForma">Otra forma</string>
+
+    <string name="MuyBien">Muy bien</string>
+    <string name="Bien">Bien</string>
+    <string name="Regular">Regular</string>
+    <string name="Mal">Mal</string>
+    <string name="MuyMal">Muy mal</string>
+    
+    <string name="Mbueno">Muy bueno</string>
+    <string name="Bueno">Bueno</string>
+    <string name="Malo">Malo</string>
+    <string name="MuyMalo">Muy malo</string>
+    
+    <string name="Muybuena">Muy buena</string>
+    <string name="Buena">Buena</string>
+    <string name="Mala">Mala</string>
+    <string name="MuyMala">Muy mala</string>
+    
+    <string name="MuySeguro">Muy seguro</string>
+    <string name="AlgoSeguro">Algo seguro</string>
+    <string name="AlgoInseguro">Algo inseguro</string>
+    <string name="MuyInseguro">Muy inseguro</string>
+
+    <string name="Muchisimo">Muchísimo</string>
+    <string name="Mucho">Mucho</string>
+    <string name="Poco">Poco</string>
+    <string name="Nada">Nada</string>
+    
+    <string name="MuchoMasCerca">Mucho más cerca</string>
+    <string name="Cerca">Cerca</string>
+    <string name="Lejos">Lejos</string>
+    <string name="MuchoMasLejos">Mucho más lejos</string>
+    
+    <string name="MuchoMasBaratos">Mucho más baratos</string>
+    <string name="Masbaratos">Más baratos</string>
+    <string name="Mascaros">Más Caros</string>
+    <string name="MuchoMasCaros">Mucho más Caros</string>
+    
+    <string name="Mmejores">Mucho mejores</string>
+    <string name="Mejores">Mejores</string>
+    <string name="Peores">Peores</string>
+    <string name="Mpeores">Mucho peores</string>
+    
+
+
+<string name="PREGUNTA1">1  Acceso</string>
+  <string name="PREGUNTA2">2  Cuestionario</string>
+  <string name="PREGUNTA3">3  ¿Cómo se entera Usted de las noticias regularmente?</string>
+  <string name="PREGUNTA4">4  Sólo como información, NO le voy a solicitar datos o sus cuentas ¿Usted tiene cuenta personal en Facebook?</string>
+  <string name="PREGUNTA5">5  ¿Tiene cuenta personal en Twitter?</string>
+  <string name="PREGUNTA6">6  ¿En este hogar algún miembro de la familia tenía o tiene algún apoyo  como…</string>
+  <string name="PREGUNTA6a">6a  Prospera</string>
+  <string name="PREGUNTA6b">6b  Seguro Popular</string>
+  <string name="PREGUNTA6c">6c  Mi beca para empezar</string>
+  <string name="PREGUNTA7">7  ¿En este hogar hay alguna persona con 65 años o más?</string>
+  <string name="PREGUNTA7a">7a  ¿Cuántas personas con 65 años o más viven en este hogar?</string>
+  
+  <string name="PREGUNTA8_1">8_1  ¿Podría hablar con él/ella?</string>
+  <string name="PREGUNTA9_1">9_1  Si es usted mayor de edad ¿podría ayudarme con algunas preguntas?</string>
+  <string name="PREGUNTA10_1">10_1  ¿Es beneficiario(a) del programa de Pensión Alimentaria para Personas Adultas Mayores? (EL ADULTO MAYOR)</string>
+  <string name="PREGUNTA10a_1">10a_1  ¿Cuándo fue la última vez que recibió depósito en su tarjeta de Bienestar?</string>
+  <string name="PREGUNTA10b_1">10b_1  ¿En los últimos seis meses (agosto 2019 a febrero 2020) ha tenido algún problema con los depósitos de su pensión)</string>
+  <string name="PREGUNTA10c_1">10c_1  Actualmente ¿ya está regularizado su pago bimestral?</string>
+  <string name="PREGUNTA11_1">11_1  Género (EL ADULTO MAYOR)</string>
+  <string name="PREGUNTA12_1">12_1  Me podría proporcionar su edad (EL ADULTO MAYOR) (anotar edad con años)</string>
+  <string name="PREGUNTA12a_1">12a_1  años</string>
+  <string name="PREGUNTA12b_1">12b_1  meses</string>
+  <string name="PREGUNTA13_1">13_1  ¿Habla o  entiende alguna lengua indígena o se considera indígena? (EL ADULTO MAYOR) (RESPUESTA MÚLTIPLE)</string>
+  <string name="PREGUNTA13a_1">13a_1  Habla</string>
+  <string name="PREGUNTA13b_1">13b_1  Entiende</string>
+  <string name="PREGUNTA13c_1">13c_1  Se considera</string>
+  <string name="PREGUNTA14_1">14_1  ¿El adulto nació o ha vivido siempre en este pueblo o barrio?</string>
+  <string name="PREGUNTA14a_1">Nació </string>
+  <string name="PREGUNTA14b_1">Ha vivido </string>
+  
+  <string name="PREGUNTA8_2">8_2  ¿Podría hablar con él/ella?</string>
+  <string name="PREGUNTA9_2">9_2  Si es usted mayor de edad ¿podría ayudarme con algunas preguntas?</string>
+  <string name="PREGUNTA10_2">10_2  ¿Es beneficiario(a) del programa de Pensión Alimentaria para Personas Adultas Mayores? (EL ADULTO MAYOR)</string>
+  <string name="PREGUNTA10a_2">10a_2  ¿Cuándo fue la última vez que recibió depósito en su tarjeta de Bienestar?</string>
+  <string name="PREGUNTA10b_2">10b_2  ¿En los últimos seis meses (agosto 2019 a febrero 2020) ha tenido algún problema con los depósitos de su pensión)</string>
+  <string name="PREGUNTA10c_2">10c_2  Actualmente ¿ya está regularizado su pago bimestral?</string>
+  <string name="PREGUNTA11_2">11_2  Género (EL ADULTO MAYOR)</string>
+  <string name="PREGUNTA12_2">12_2  Me podría proporcionar su edad (EL ADULTO MAYOR) (anotar edad con años y meses)</string>
+  <string name="PREGUNTA12a_2">12a_2  años</string>
+  <string name="PREGUNTA12b_2">12b_2  meses</string>
+  <string name="PREGUNTA13_2">13_2  ¿Habla o  entiende alguna lengua indígena o se considera indígena? (EL ADULTO MAYOR) (RESPUESTA MÚLTIPLE)</string>
+  <string name="PREGUNTA13a_2">13a_2  Habla</string>
+  <string name="PREGUNTA13b_2">13b_2  Entiende</string>
+  <string name="PREGUNTA13c_2">13c_2  Se considera</string>
+  <string name="PREGUNTA14_2">14_2  ¿El adulto nació o ha vivido siempre en este pueblo o barrio?</string>
+  <string name="PREGUNTA14a_2">Nació </string>
+  <string name="PREGUNTA14b_2">Ha vivido </string>
+  
+  
+  <string name="PREGUNTA15">15  Y ¿en este hogar vive algún niño(a) menor 16 años con alguna discapacidad?</string>
+  <string name="PREGUNTA15a">15a  ¿Cuántos menores de 16 años hay con discapacidad?</string>
+  
+  <string name="PREGUNTA16_1">16_1  ¿Cuál es su parentesco con  él/ella? (EL MENOR)</string>
+  <string name="PREGUNTA17_1">17_1  Me podría decir la fecha de nacimiento del menor (EL MENOR)</string>
+  <string name="PREGUNTA17a_1">17a_1  Día</string>
+  <string name="PREGUNTA17b_1">17b_1  Mes</string>
+  <string name="PREGUNTA17c_1">17c_1  Año</string>
+  <string name="PREGUNTA18_1">18_1  Edad (arrojar edad por sistema)</string>
+  <string name="PREGUNTA19_1">19_1  Género (EL MENOR)</string>
+  <string name="PREGUNTA20_1">20_1  ¿Cuál fue el origen de la discapacidad de él/ella?  (EL MENOR)</string>
+  <string name="PREGUNTA21_1">21_1  ¿Qué instituto realizó el diagnóstico de él/ella?  (EL MENOR)</string>
+  <string name="PREGUNTA22_1">22_1   ¿Tiene algún servicio de salud actualmente? (EL MENOR)</string>
+  <string name="PREGUNTA22a_1">22a_1  ¿Cuál? (EL MENOR)</string>
+  <string name="PREGUNTA23_1">23_1  ¿Cuál es el nivel último de estudios completo? (EL MENOR)</string>
+  
+    <string name="PREGUNTA16_2">16_2  ¿Cuál es su parentesco con  él/ella? (EL MENOR)</string>
+  <string name="PREGUNTA17_2">17_2  Me podría decir la fecha de nacimiento del menor (EL MENOR)</string>
+  <string name="PREGUNTA17a_2">17a_2  Día</string>
+  <string name="PREGUNTA17b_2">17_b  Mes</string>
+  <string name="PREGUNTA17c_2">17c_2  Año</string>
+  <string name="PREGUNTA18_2">18_2  Edad (arrojar edad por sistema)</string>
+  <string name="PREGUNTA19_2">19_2  Género (EL MENOR)</string>
+  <string name="PREGUNTA20_2">20_2  ¿Cuál fue el origen de la discapacidad de él/ella?  (EL MENOR)</string>
+  <string name="PREGUNTA21_2">21_2  ¿Qué instituto realizó el diagnóstico de él/ella?  (EL MENOR)</string>
+  <string name="PREGUNTA22_2">22_2   ¿Tiene algún servicio de salud actualmente? (EL MENOR)</string>
+  <string name="PREGUNTA22a_2">22a_2  ¿Cuál? (EL MENOR)</string>
+  <string name="PREGUNTA23_2">23_2  ¿Cuál es el nivel último de estudios completo? (EL MENOR)</string>
+  
+  <string name="PREGUNTAEST">Para terminar le voy a realizar algunas preguntas para la estadística</string>
+   <string name="PREGUNTAHIJOS">Tiene hijos</string>
+    <string name="PREGUNTAEDAD">¿Me podría decir su edad?</string>
+    <string name="PREGUNTAAPORTA">Pensando en el jefe o jefa de hogar, ¿cuál fue el último año de estudios que aprobó en la escuela?</string>
+    <string name="PREGUNTAOCUPACION">¿Cuál es la principal ocupación o actividad en la semana?</string>
+    <string name="PREGUNTATRABAJARON"> De todas las personas de 14 años o más que viven en el hogar, ¿cuántas trabajaron en el último mes?</string>
+    <string name="PREGUNTACOCHE">¿Tiene automóvil propio?</string>
+    <string name="PREGUNTACUANTOSCOCHES">¿Cuántos coches tienen en su vivienda?</string>
+    <string name="PREGUNTACUARTOS">Sin contar baño ni cocina, ¿cuántos cuartos tiene su vivienda?</string>
+    <string name="PREGUNTACUARTOSDORMIR">En esta vivienda, ¿cuántos cuartos se usan para dormir, sin contar pasillos ni baños?</string>
+    <string name="PREGUNTAFOCOS">¿Cuántos focos tiene su vivienda?</string>
+    <string name="PREGUNTABANOS">¿Cuántos baños completos con regadera y W.C. (excusado) hay en esta vivienda?</string>
+    <string name="PREGUNTAREGADERA">¿Tiene regadera en su baño?</string>
+    <string name="PREGUNTAINTERNET">Sin tomar en cuenta la conexión móvil que pudiera tener desde algún celular ¿este hogar cuenta con internet?</string>
+    <string name="PREGUNTAESTUFA">¿Tiene estufa de gas?</string>
+    <string name="PREGUNTA_TIPO_PISO"> ¿El piso de su hogar es predominantemente de tierra, o de cemento, o de algún otro tipo de acabado?</string>
+    <string name="PREGUNTA_TIPO_VIVIENDA">¿Tipo de vivienda? (observación)</string>
+    <string name="PREGUNTAGENERO">¿Género?</string>
+  
+  <string name="PREGUNTA90">90  Dirección (Apuntar todos los campos que apliquen, los que no, poner n/a)</string>
+  <string name="PREGUNTA90a">90a  Calle:</string>
+  <string name="PREGUNTA90b">90b  No ext.:</string>
+  <string name="PREGUNTA90c">90c  No Int:</string>
+  <string name="PREGUNTA90d">90d  Manzana:</string>
+  <string name="PREGUNTA90e">90e  Lote:</string>
+  <string name="PREGUNTA90f">90f  Entre la calle</string>
+  <string name="PREGUNTA90g">90g  Y la calle</string>
+  <string name="PREGUNTA90h">90h  Localidad/Colonia/Pueblo/ Barrio:</string>
+  <string name="PREGUNTA90i">90i  Alcaldía:</string>
+  <string name="PREGUNTA90j">90j  Datos de referencia:</string>
+
+  <string name="PREGUNTAABANDONO">¿Tipo de encuesta....?</string> 
+
+    <string name="ns">No sabe / No Contestó</string>
+    <string name="nc">No contestó</string>
+    
+
+</resources>
