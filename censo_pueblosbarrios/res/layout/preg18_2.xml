@@ -44,7 +44,7 @@
 
 <EditText
 android:id="@+id/editPregunta18_2"
-android:layout_width="320dp"
+android:layout_width="100dp"
 android:layout_height="wrap_content"
 android:layout_marginBottom="30dp"
 android:layout_marginTop="30dp"

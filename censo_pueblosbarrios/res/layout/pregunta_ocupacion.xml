@@ -52,140 +52,75 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical" >
 
-                                <RadioButton
-android:id="@+id/radio1"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Cuidar del hogar (no remunerado)"
-/>
+ <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hogar"
+                                    android:textSize="16sp" />
 
-<RadioButton
-android:id="@+id/radio2"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Estudiante"
-/>
+                                <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Estudiante"
+                                    android:textSize="16sp" />
 
-<RadioButton
-android:id="@+id/radio3"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Desempleado"
-/>
+                                <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Profesionista"
+                                    android:textSize="16sp" />
 
-<RadioButton
-android:id="@+id/radio4"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Jubilado"
-/>
+                                <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Empleado"
+                                    android:textSize="16sp" />
 
-<RadioButton
-android:id="@+id/radio5"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Trabaja como profesionista o técnico"
-/>
+                                <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Obrero / oficio"
+                                    android:textSize="16sp" />
 
-<RadioButton
-android:id="@+id/radio6"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Trabaja como administrativo"
-/>
+                                <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Comerciante"
+                                    android:textSize="16sp" />
 
-<RadioButton
-android:id="@+id/radio7"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Trabaja como comerciante, vendedor(a)"
-/>
+                                <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jubilado"
+                                    android:textSize="16sp" />
 
-<RadioButton
-android:id="@+id/radio8"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Trabaja como operador de maquinaria, obrero en la construcción)"
-/>
+                                <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Otro"
+                                    android:textSize="16sp" />
+                                
+                                 <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Desempleado"
+                                    android:textSize="16sp" />
 
-<RadioButton
-android:id="@+id/radio9"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Trabaja como cuidador de otras personas, servicio doméstico, (servicios personales) remunerados)"
-/>
-
-<RadioButton
-android:id="@+id/radio10"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="Trabaja en actividades agrícolas, ganaderas, forestales, etc."
-/>
-
-
-<EditText
-android:id="@+id/editPreguntaOcupacion"
-android:layout_width="320dp"
-android:layout_height="wrap_content"
-android:layout_marginBottom="30dp"
-android:layout_marginTop="30dp"
-android:ems="10"
-android:hint="Otro"
-android:inputType="text"
-android:textSize="16sp" />
-
-
-<RadioButton
-android:id="@+id/radio0"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:button="@drawable/radiobutton_selector"
-android:textColor="@drawable/radiobutton_color_selector"
-android:textSize="16sp"
-android:theme="@style/RadioButton"
-android:text="No sabe / No contestó"
-/>
-
+                                <RadioButton  android:button="@drawable/radiobutton_selector" android:textColor="@drawable/radiobutton_color_selector" android:theme="@style/RadioButton"
+                                    android:id="@+id/radio0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ns"
+                                    android:textSize="16sp" />
 
                             </RadioGroup>
                         </LinearLayout>

@@ -46,7 +46,7 @@ static String nombreE = nom.nombreEncuesta();
 	static String prefix = ID;
 
 	// private static final String DATABASE_NAME = Environment.getExternalStorageDirectory() +"/Mis_archivos/" +nombreE+"_"+prefix+"";
-	 private static final int DATABASE_VERSION = 3;
+	 private static final int DATABASE_VERSION = 4;
 	 
 	 public UsuariosSQLiteHelper(Context context, String name,CursorFactory factory, int version, String DATABASE_NAME) {
 		 super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -125,6 +125,7 @@ static String nombreE = nom.nombreEncuesta();
 	        public static String COLUMNA_pregunta_10c_1="pregunta_10c_1";
 	        public static String COLUMNA_pregunta_11_1="pregunta_11_1";
 	        public static String COLUMNA_pregunta_12_1="pregunta_12_1";
+	        public static String COLUMNA_pregunta_12a_1="pregunta_12a_1";
 	        public static String COLUMNA_pregunta_13_1="pregunta_13_1";
 	        public static String COLUMNA_pregunta_13a_1="pregunta_13a_1";
 	        public static String COLUMNA_pregunta_13b_1="pregunta_13b_1";
@@ -141,7 +142,6 @@ static String nombreE = nom.nombreEncuesta();
 	        public static String COLUMNA_pregunta_11_2="pregunta_11_2";
 	        public static String COLUMNA_pregunta_12_2="pregunta_12_2";
 	        public static String COLUMNA_pregunta_12a_2="pregunta_12a_2";
-	        public static String COLUMNA_pregunta_12b_2="pregunta_12b_2";
 	        public static String COLUMNA_pregunta_13_2="pregunta_13_2";
 	        public static String COLUMNA_pregunta_13a_2="pregunta_13a_2";
 	        public static String COLUMNA_pregunta_13b_2="pregunta_13b_2";
@@ -254,6 +254,7 @@ static String nombreE = nom.nombreEncuesta();
 + TablaEncuestas.COLUMNA_pregunta_10c_1 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_11_1 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_12_1 +  " text, "
++ TablaEncuestas.COLUMNA_pregunta_12a_1 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_13_1 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_13a_1 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_13b_1 +  " text, "
@@ -270,7 +271,6 @@ static String nombreE = nom.nombreEncuesta();
 + TablaEncuestas.COLUMNA_pregunta_11_2 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_12_2 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_12a_2 +  " text, "
-+ TablaEncuestas.COLUMNA_pregunta_12b_2 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_13_2 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_13a_2 +  " text, "
 + TablaEncuestas.COLUMNA_pregunta_13b_2 +  " text, "

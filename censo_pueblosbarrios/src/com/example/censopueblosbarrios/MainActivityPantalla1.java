@@ -56,6 +56,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 public class MainActivityPantalla1 extends Activity {
 
 	private static final String LOG_TAG = "Pantalla 1";
@@ -127,7 +129,7 @@ public class MainActivityPantalla1 extends Activity {
 	public RadioGroup rdPregunta2c, rdPregunta2d, rdPregunta2e, rdPregunta2f, rdPregunta2g, rdPregunta2h, rdPregunta2i;
 
 	public RadioButton radio11_1, radio11_2, radio11_3, radio11_4, radio11_5, radio11_6, radio11_7, radio11_8,
-			radio11_9, radio11_10, radio11_11, radio11_12, radio11_0;
+			radio11_9, radio11_10, radio11_11, radio11_12, radio11_0,radio12_0_1,radio12_0_2;
 	public RadioButton radio13_1, radio13_2, radio13_3, radio13_4, radio13_5, radio13_6, radio13_7, radio13_8,
 			radio13_9, radio13_10, radio13_11, radio13_12, radio13_0;
 	public RadioButton radio_abandono1,radio_abandono2,radio_abandono3;
@@ -571,7 +573,6 @@ public class MainActivityPantalla1 extends Activity {
 	public EditText editPregunta11_1;
 	public EditText editPregunta12_1;
 	public EditText editPregunta12a_1;
-	public EditText editPregunta12b_1;
 	public EditText editPregunta13_1;
 	public EditText editPregunta13a_1;
 	public EditText editPregunta13b_1;
@@ -588,7 +589,6 @@ public class MainActivityPantalla1 extends Activity {
 	public EditText editPregunta11_2;
 	public EditText editPregunta12_2;
 	public EditText editPregunta12a_2;
-	public EditText editPregunta12b_2;
 	public EditText editPregunta13_2;
 	public EditText editPregunta13a_2;
 	public EditText editPregunta13b_2;
@@ -1261,6 +1261,9 @@ public class MainActivityPantalla1 extends Activity {
 		radio_abandono1 =(RadioButton)findViewById(R.id.radio_abandono1);
 		radio_abandono2 =(RadioButton)findViewById(R.id.radio_abandono2);
 		radio_abandono3 =(RadioButton)findViewById(R.id.radio_abandono3);
+		
+		radio12_0_1 =(RadioButton)findViewById(R.id.radio12_0_1);
+		radio12_0_2 =(RadioButton)findViewById(R.id.radio12_0_2);
 
 		rdPregunta1 = (RadioGroup)findViewById(R.id.rdPregunta1);
 		rdPregunta2 = (RadioGroup)findViewById(R.id.rdPregunta2);
@@ -1361,19 +1364,23 @@ public class MainActivityPantalla1 extends Activity {
 		rdPreguntaTipoPiso = (RadioGroup) findViewById(R.id.rdPreguntaTipoPiso);
 		
 		
-		editPregunta12_2= (EditText)findViewById(R.id.editPregunta12_2);
-		editPregunta16_2= (EditText)findViewById(R.id.editPregunta16_2);
-		editPregunta18_2= (EditText)findViewById(R.id.editPregunta18_2);
-		editPregunta19_2= (EditText)findViewById(R.id.editPregunta19_2);
-		editPregunta21_2= (EditText)findViewById(R.id.editPregunta21_2);
-		editPregunta22a_2= (EditText)findViewById(R.id.editPregunta22a_2);
+		
 		
 		editPregunta12_1= (EditText)findViewById(R.id.editPregunta12_1);
+		editPregunta12a_1= (EditText)findViewById(R.id.editPregunta12a_1);
 		editPregunta16_1= (EditText)findViewById(R.id.editPregunta16_1);
 		editPregunta18_1= (EditText)findViewById(R.id.editPregunta18_1);
 		editPregunta19_1= (EditText)findViewById(R.id.editPregunta19_1);
 		editPregunta21_1= (EditText)findViewById(R.id.editPregunta21_1);
 		editPregunta22a_1= (EditText)findViewById(R.id.editPregunta22a_1);
+		
+		editPregunta12_2= (EditText)findViewById(R.id.editPregunta12_2);
+		editPregunta12a_2= (EditText)findViewById(R.id.editPregunta12a_2);
+		editPregunta16_2= (EditText)findViewById(R.id.editPregunta16_2);
+		editPregunta18_2= (EditText)findViewById(R.id.editPregunta18_2);
+		editPregunta19_2= (EditText)findViewById(R.id.editPregunta19_2);
+		editPregunta21_2= (EditText)findViewById(R.id.editPregunta21_2);
+		editPregunta22a_2= (EditText)findViewById(R.id.editPregunta22a_2);
 		
 		editPregunta90a= (EditText)findViewById(R.id.editPregunta90a);
 		editPregunta90b= (EditText)findViewById(R.id.editPregunta90b);
@@ -1387,89 +1394,109 @@ public class MainActivityPantalla1 extends Activity {
 		editPregunta90j= (EditText)findViewById(R.id.editPregunta90j);
 
 
+		res = getResources();
 		
-//		captura1 =res.getString(R.string.PREGUNTA1);
-//		captura2 =res.getString(R.string.PREGUNTA2);
-//		captura3 =res.getString(R.string.PREGUNTA3);
-//		captura4 =res.getString(R.string.PREGUNTA4);
-//		captura5 =res.getString(R.string.PREGUNTA5);
-//		captura6 =res.getString(R.string.PREGUNTA6);
-//		captura6a =res.getString(R.string.PREGUNTA6a);
-//		captura6b =res.getString(R.string.PREGUNTA6b);
-//		captura6c =res.getString(R.string.PREGUNTA6c);
-//		captura7 =res.getString(R.string.PREGUNTA7);
-//		captura7a =res.getString(R.string.PREGUNTA7a);
-//		captura8_1 =res.getString(R.string.PREGUNTA8_1);
-//		captura9_1 =res.getString(R.string.PREGUNTA9_1);
-//		captura10_1 =res.getString(R.string.PREGUNTA10_1);
-//		captura10a_1 =res.getString(R.string.PREGUNTA10a_1);
-//		captura10b_1 =res.getString(R.string.PREGUNTA10b_1);
-//		captura10c_1 =res.getString(R.string.PREGUNTA10c_1);
-//		captura11_1 =res.getString(R.string.PREGUNTA11_1);
-//		captura12_1 =res.getString(R.string.PREGUNTA12_1);
-//		captura12a_1 =res.getString(R.string.PREGUNTA12a_1);
-//		captura12b_1 =res.getString(R.string.PREGUNTA12b_1);
-//		captura13_1 =res.getString(R.string.PREGUNTA13_1);
-//		captura13a_1 =res.getString(R.string.PREGUNTA13a_1);
-//		captura13b_1 =res.getString(R.string.PREGUNTA13b_1);
-//		captura13c_1 =res.getString(R.string.PREGUNTA13c_1);
-//		captura14_1 =res.getString(R.string.PREGUNTA14_1);
-//		captura14a_1 =res.getString(R.string.PREGUNTA14a_1);
-//		captura14b_1 =res.getString(R.string.PREGUNTA14b_1);
-//		captura8_2 =res.getString(R.string.PREGUNTA8_2);
-//		captura9_2 =res.getString(R.string.PREGUNTA9_2);
-//		captura10_2 =res.getString(R.string.PREGUNTA10_2);
-//		captura10a_2 =res.getString(R.string.PREGUNTA10a_2);
-//		captura10b_2 =res.getString(R.string.PREGUNTA10b_2);
-//		captura10c_2 =res.getString(R.string.PREGUNTA10c_2);
-//		captura11_2 =res.getString(R.string.PREGUNTA11_2);
-//		captura12_2 =res.getString(R.string.PREGUNTA12_2);
-//		captura12a_2 =res.getString(R.string.PREGUNTA12a_2);
-//		captura12b_2 =res.getString(R.string.PREGUNTA12b_2);
-//		captura13_2 =res.getString(R.string.PREGUNTA13_2);
-//		captura13a_2 =res.getString(R.string.PREGUNTA13a_2);
-//		captura13b_2 =res.getString(R.string.PREGUNTA13b_2);
-//		captura13c_2 =res.getString(R.string.PREGUNTA13c_2);
-//		captura14_2 =res.getString(R.string.PREGUNTA14_2);
-//		captura14a_2 =res.getString(R.string.PREGUNTA14a_2);
-//		captura14b_2 =res.getString(R.string.PREGUNTA14b_2);
-//		captura15 =res.getString(R.string.PREGUNTA15);
-//		captura15a =res.getString(R.string.PREGUNTA15a);
-//		captura16_1 =res.getString(R.string.PREGUNTA16_1);
-//		captura17_1 =res.getString(R.string.PREGUNTA17_1);
-//		captura17a_1 =res.getString(R.string.PREGUNTA17a_1);
-//		captura17b_1 =res.getString(R.string.PREGUNTA17b_1);
-//		captura17c_1 =res.getString(R.string.PREGUNTA17c_1);
-//		captura18_1 =res.getString(R.string.PREGUNTA18_1);
-//		captura19_1 =res.getString(R.string.PREGUNTA19_1);
-//		captura20_1 =res.getString(R.string.PREGUNTA20_1);
-//		captura21_1 =res.getString(R.string.PREGUNTA21_1);
-//		captura22_1 =res.getString(R.string.PREGUNTA22_1);
-//		captura22a_1 =res.getString(R.string.PREGUNTA22a_1);
-//		captura23_1 =res.getString(R.string.PREGUNTA23_1);
-//		captura16_2 =res.getString(R.string.PREGUNTA16_2);
-//		captura17_2 =res.getString(R.string.PREGUNTA17_2);
-//		captura17a_2 =res.getString(R.string.PREGUNTA17a_2);
-//		captura17b_2 =res.getString(R.string.PREGUNTA17b_2);
-//		captura17c_2 =res.getString(R.string.PREGUNTA17c_2);
-//		captura18_2 =res.getString(R.string.PREGUNTA18_2);
-//		captura19_2 =res.getString(R.string.PREGUNTA19_2);
-//		captura20_2 =res.getString(R.string.PREGUNTA20_2);
-//		captura21_2 =res.getString(R.string.PREGUNTA21_2);
-//		captura22_2 =res.getString(R.string.PREGUNTA22_2);
-//		captura22a_2 =res.getString(R.string.PREGUNTA22a_2);
-//		captura23_2 =res.getString(R.string.PREGUNTA23_2);
-//		captura90 =res.getString(R.string.PREGUNTA90);
-//		captura90a =res.getString(R.string.PREGUNTA90a);
-//		captura90b =res.getString(R.string.PREGUNTA90b);
-//		captura90c =res.getString(R.string.PREGUNTA90c);
-//		captura90d =res.getString(R.string.PREGUNTA90d);
-//		captura90e =res.getString(R.string.PREGUNTA90e);
-//		captura90f =res.getString(R.string.PREGUNTA90f);
-//		captura90g =res.getString(R.string.PREGUNTA90g);
-//		captura90h =res.getString(R.string.PREGUNTA90h);
-//		captura90i =res.getString(R.string.PREGUNTA90i);
-//		captura90j =res.getString(R.string.PREGUNTA90j);
+		captura1 =res.getString(R.string.PREGUNTA1);
+		captura2 =res.getString(R.string.PREGUNTA2);
+		captura3 =res.getString(R.string.PREGUNTA3);
+		captura4 =res.getString(R.string.PREGUNTA4);
+		captura5 =res.getString(R.string.PREGUNTA5);
+		captura6 =res.getString(R.string.PREGUNTA6);
+		captura6a =res.getString(R.string.PREGUNTA6a);
+		captura6b =res.getString(R.string.PREGUNTA6b);
+		captura6c =res.getString(R.string.PREGUNTA6c);
+		captura7 =res.getString(R.string.PREGUNTA7);
+		captura7a =res.getString(R.string.PREGUNTA7a);
+		captura8_1 =res.getString(R.string.PREGUNTA8_1);
+		captura9_1 =res.getString(R.string.PREGUNTA9_1);
+		captura10_1 =res.getString(R.string.PREGUNTA10_1);
+		captura10a_1 =res.getString(R.string.PREGUNTA10a_1);
+		captura10b_1 =res.getString(R.string.PREGUNTA10b_1);
+		captura10c_1 =res.getString(R.string.PREGUNTA10c_1);
+		captura11_1 =res.getString(R.string.PREGUNTA11_1);
+		captura12_1 =res.getString(R.string.PREGUNTA12_1);
+		captura12a_1 =res.getString(R.string.PREGUNTA12a_1);
+		captura12b_1 =res.getString(R.string.PREGUNTA12b_1);
+		captura13_1 =res.getString(R.string.PREGUNTA13_1);
+		captura13a_1 =res.getString(R.string.PREGUNTA13a_1);
+		captura13b_1 =res.getString(R.string.PREGUNTA13b_1);
+		captura13c_1 =res.getString(R.string.PREGUNTA13c_1);
+		captura14_1 =res.getString(R.string.PREGUNTA14_1);
+		captura14a_1 =res.getString(R.string.PREGUNTA14a_1);
+		captura14b_1 =res.getString(R.string.PREGUNTA14b_1);
+		captura8_2 =res.getString(R.string.PREGUNTA8_2);
+		captura9_2 =res.getString(R.string.PREGUNTA9_2);
+		captura10_2 =res.getString(R.string.PREGUNTA10_2);
+		captura10a_2 =res.getString(R.string.PREGUNTA10a_2);
+		captura10b_2 =res.getString(R.string.PREGUNTA10b_2);
+		captura10c_2 =res.getString(R.string.PREGUNTA10c_2);
+		captura11_2 =res.getString(R.string.PREGUNTA11_2);
+		captura12_2 =res.getString(R.string.PREGUNTA12_2);
+		captura12a_2 =res.getString(R.string.PREGUNTA12a_2);
+		captura12b_2 =res.getString(R.string.PREGUNTA12b_2);
+		captura13_2 =res.getString(R.string.PREGUNTA13_2);
+		captura13a_2 =res.getString(R.string.PREGUNTA13a_2);
+		captura13b_2 =res.getString(R.string.PREGUNTA13b_2);
+		captura13c_2 =res.getString(R.string.PREGUNTA13c_2);
+		captura14_2 =res.getString(R.string.PREGUNTA14_2);
+		captura14a_2 =res.getString(R.string.PREGUNTA14a_2);
+		captura14b_2 =res.getString(R.string.PREGUNTA14b_2);
+		captura15 =res.getString(R.string.PREGUNTA15);
+		captura15a =res.getString(R.string.PREGUNTA15a);
+		captura16_1 =res.getString(R.string.PREGUNTA16_1);
+		captura17_1 =res.getString(R.string.PREGUNTA17_1);
+		captura17a_1 =res.getString(R.string.PREGUNTA17a_1);
+		captura17b_1 =res.getString(R.string.PREGUNTA17b_1);
+		captura17c_1 =res.getString(R.string.PREGUNTA17c_1);
+		captura18_1 =res.getString(R.string.PREGUNTA18_1);
+		captura19_1 =res.getString(R.string.PREGUNTA19_1);
+		captura20_1 =res.getString(R.string.PREGUNTA20_1);
+		captura21_1 =res.getString(R.string.PREGUNTA21_1);
+		captura22_1 =res.getString(R.string.PREGUNTA22_1);
+		captura22a_1 =res.getString(R.string.PREGUNTA22a_1);
+		captura23_1 =res.getString(R.string.PREGUNTA23_1);
+		captura16_2 =res.getString(R.string.PREGUNTA16_2);
+		captura17_2 =res.getString(R.string.PREGUNTA17_2);
+		captura17a_2 =res.getString(R.string.PREGUNTA17a_2);
+		captura17b_2 =res.getString(R.string.PREGUNTA17b_2);
+		captura17c_2 =res.getString(R.string.PREGUNTA17c_2);
+		captura18_2 =res.getString(R.string.PREGUNTA18_2);
+		captura19_2 =res.getString(R.string.PREGUNTA19_2);
+		captura20_2 =res.getString(R.string.PREGUNTA20_2);
+		captura21_2 =res.getString(R.string.PREGUNTA21_2);
+		captura22_2 =res.getString(R.string.PREGUNTA22_2);
+		captura22a_2 =res.getString(R.string.PREGUNTA22a_2);
+		captura23_2 =res.getString(R.string.PREGUNTA23_2);
+		captura90 =res.getString(R.string.PREGUNTA90);
+		captura90a =res.getString(R.string.PREGUNTA90a);
+		captura90b =res.getString(R.string.PREGUNTA90b);
+		captura90c =res.getString(R.string.PREGUNTA90c);
+		captura90d =res.getString(R.string.PREGUNTA90d);
+		captura90e =res.getString(R.string.PREGUNTA90e);
+		captura90f =res.getString(R.string.PREGUNTA90f);
+		captura90g =res.getString(R.string.PREGUNTA90g);
+		captura90h =res.getString(R.string.PREGUNTA90h);
+		captura90i =res.getString(R.string.PREGUNTA90i);
+		captura90j =res.getString(R.string.PREGUNTA90j);
+		
+		capturaHijos=res.getString(R.string.PREGUNTAHIJOS);
+		capturaAporta=res.getString(R.string.PREGUNTAAPORTA);
+		capturaOcupacion=res.getString(R.string.PREGUNTAOCUPACION);
+		capturaCoche=res.getString(R.string.PREGUNTACOCHE);
+		capturaCuantosCoches=res.getString(R.string.PREGUNTACUANTOSCOCHES);
+		capturaFocos=res.getString(R.string.PREGUNTAFOCOS);
+		capturaCuartos=res.getString(R.string.PREGUNTACUARTOS);
+		capturaCuartosDormir=res.getString(R.string.PREGUNTACUARTOSDORMIR);
+		capturaBanos=res.getString(R.string.PREGUNTABANOS);
+		capturaRegadera=res.getString(R.string.PREGUNTAREGADERA);
+		capturaInternet=res.getString(R.string.PREGUNTAINTERNET);
+		capturaTrabajaron=res.getString(R.string.PREGUNTATRABAJARON);
+		capturaEstufa=res.getString(R.string.PREGUNTAESTUFA);
+		capturaEdad=res.getString(R.string.PREGUNTAEDAD);
+		capturaGenero=res.getString(R.string.PREGUNTAGENERO);
+		capturaTipoVivienda=res.getString(R.string.PREGUNTA_TIPO_VIVIENDA);
+		capturaTipoPiso=res.getString(R.string.PREGUNTA_TIPO_PISO);
+
 
 
 		
@@ -1623,6 +1650,31 @@ public class MainActivityPantalla1 extends Activity {
 		lay6c .setVisibility(View.GONE);
 		lay7 .setVisibility(View.GONE);
 		lay7a .setVisibility(View.GONE);
+		
+		op2 ="No aplica";
+		op3 ="No aplica";
+		op4 ="No aplica";
+		op5 ="No aplica";
+		op6 ="No aplica";
+		op6a ="No aplica";
+		op6b ="No aplica";
+		op6c ="No aplica";
+		op7 ="No aplica";
+		op7a ="No aplica";
+		
+		
+		rdPregunta2 .clearCheck();
+		rdPregunta3 .clearCheck();
+		rdPregunta4 .clearCheck();
+		rdPregunta5 .clearCheck();
+		rdPregunta6 .clearCheck();
+		rdPregunta6a .clearCheck();
+		rdPregunta6b .clearCheck();
+		rdPregunta6c .clearCheck();
+		rdPregunta7 .clearCheck();
+		rdPregunta7a .clearCheck();
+		
+		
 
 			ocultaTodo();	
 			
@@ -1675,7 +1727,24 @@ public class MainActivityPantalla1 extends Activity {
 					rdPregunta7a.clearCheck();
 
 					ocultaEstadisticas();
-					muestraDireccion();
+
+
+					lay90.setVisibility(View.VISIBLE); 
+					lay90a.setVisibility(View.VISIBLE); 
+					lay90b.setVisibility(View.VISIBLE); 
+					lay90c.setVisibility(View.VISIBLE); 
+					lay90d.setVisibility(View.VISIBLE); 
+					lay90e.setVisibility(View.VISIBLE); 
+					lay90f.setVisibility(View.VISIBLE); 
+					lay90g.setVisibility(View.VISIBLE); 
+					lay90h.setVisibility(View.VISIBLE); 
+					lay90i.setVisibility(View.VISIBLE); 
+					lay90j.setVisibility(View.VISIBLE); 
+					
+					
+					ocultaMenorConDiscapacidad_1();
+					ocultaMenorConDiscapacidad_2();
+
 
 					
 					lay15.setVisibility(View.GONE); 
@@ -1694,17 +1763,6 @@ public class MainActivityPantalla1 extends Activity {
 					lay2.setVisibility(View.VISIBLE); 
 					op2="sin datos"; 
 
-					op2="sin datos";
-					op3="sin datos";
-					op4="sin datos";
-					op5="sin datos";
-					op6a="sin datos";
-					op6b="sin datos";
-					op6c="sin datos";
-					op7="sin datos";
-					op7a="sin datos";
-
-					ocultaDireccion();
 					ocultaAdulto_1();
 					ocultaAdulto_2();
 					lay15.setVisibility(View.GONE); 
@@ -1724,28 +1782,196 @@ public class MainActivityPantalla1 extends Activity {
 				if (checkedId == R.id.radio1) {
 					op2 = "Acepta Cuestionario";
 					radio_abandono1.setChecked(true);
-					ocultaDireccion();
+					
+					lay3 .setVisibility(View.VISIBLE);
+					lay4 .setVisibility(View.VISIBLE);
+					lay5 .setVisibility(View.VISIBLE);
+					lay6 .setVisibility(View.VISIBLE);
+					lay6a .setVisibility(View.VISIBLE);
+					lay6b .setVisibility(View.VISIBLE);
+					lay6c .setVisibility(View.VISIBLE);
+					lay7 .setVisibility(View.VISIBLE);
+					
+					
+					op3="sin datos";
+					op4 ="sin datos";
+					op5 ="sin datos";
+					op6 ="sin datos";
+					op6a="sin datos";
+					op6b="sin datos";
+					op6c="sin datos";
+					op7 ="sin datos";
+				
+					
+					rdPregunta3.clearCheck();
+					rdPregunta4 .clearCheck();
+					rdPregunta5 .clearCheck();
+					rdPregunta6 .clearCheck();
+					rdPregunta6a.clearCheck();
+					rdPregunta6b.clearCheck();
+					rdPregunta6c.clearCheck();
+					rdPregunta7 .clearCheck();
+				
+					
+					
 				}
 				else if (checkedId == R.id.radio2) {
 					op2 = "No acepta por el momento o es menor quien abre";
 					radio_abandono3.setChecked(true);
 					
 					ocultaEstadisticas();
-					muestraDireccion();
+					lay3 .setVisibility(View.GONE);
+					lay4 .setVisibility(View.GONE);
+					lay5 .setVisibility(View.GONE);
+					lay6 .setVisibility(View.GONE);
+					lay6a .setVisibility(View.GONE);
+					lay6b .setVisibility(View.GONE);
+					lay6c .setVisibility(View.GONE);
+					lay7 .setVisibility(View.GONE);
+					lay7a .setVisibility(View.GONE);
+					op3="No aplica";
+					op4 ="No aplica";
+					op5 ="No aplica";
+					op6 ="No aplica";
+					op6a="No aplica";
+					op6b="No aplica";
+					op6c="No aplica";
+					op7 ="No aplica";
+					op7a="No aplica";
+					rdPregunta3.clearCheck();
+					rdPregunta4 .clearCheck();
+					rdPregunta5 .clearCheck();
+					rdPregunta6 .clearCheck();
+					rdPregunta6a.clearCheck();
+					rdPregunta6b.clearCheck();
+					rdPregunta6c.clearCheck();
+					rdPregunta7 .clearCheck();
+					rdPregunta7a.clearCheck();
+					
+					
+//					ocultaAdulto_1();
+//					ocultaAdulto_2();
+//					
+					
+					
+					lay90.setVisibility(View.VISIBLE); 
+					lay90a.setVisibility(View.VISIBLE); 
+					lay90b.setVisibility(View.VISIBLE); 
+					lay90c.setVisibility(View.VISIBLE); 
+					lay90d.setVisibility(View.VISIBLE); 
+					lay90e.setVisibility(View.VISIBLE); 
+					lay90f.setVisibility(View.VISIBLE); 
+					lay90g.setVisibility(View.VISIBLE); 
+					lay90h.setVisibility(View.VISIBLE); 
+					lay90i.setVisibility(View.VISIBLE); 
+					lay90j.setVisibility(View.VISIBLE); 
 				}
 				else if (checkedId == R.id.radio3) {
 					op2 = "No tiene posibilidades de responder";
 					radio_abandono3.setChecked(true);
 					
 					ocultaEstadisticas();
-					muestraDireccion();
+					lay3 .setVisibility(View.GONE);
+					lay4 .setVisibility(View.GONE);
+					lay5 .setVisibility(View.GONE);
+					lay6 .setVisibility(View.GONE);
+					lay6a .setVisibility(View.GONE);
+					lay6b .setVisibility(View.GONE);
+					lay6c .setVisibility(View.GONE);
+					lay7 .setVisibility(View.GONE);
+					lay7a .setVisibility(View.GONE);
+					
+					op3="No aplica";
+					op4 ="No aplica";
+					op5 ="No aplica";
+					op6 ="No aplica";
+					op6a="No aplica";
+					op6b="No aplica";
+					op6c="No aplica";
+					op7 ="No aplica";
+					op7a="No aplica";
+					
+					rdPregunta3.clearCheck();
+					rdPregunta4 .clearCheck();
+					rdPregunta5 .clearCheck();
+					rdPregunta6 .clearCheck();
+					rdPregunta6a.clearCheck();
+					rdPregunta6b.clearCheck();
+					rdPregunta6c.clearCheck();
+					rdPregunta7 .clearCheck();
+					rdPregunta7a.clearCheck();
+					
+					
+//					ocultaAdulto_1();
+//					ocultaAdulto_2();
+//					
+					
+					
+					lay90.setVisibility(View.VISIBLE); 
+					lay90a.setVisibility(View.VISIBLE); 
+					lay90b.setVisibility(View.VISIBLE); 
+					lay90c.setVisibility(View.VISIBLE); 
+					lay90d.setVisibility(View.VISIBLE); 
+					lay90e.setVisibility(View.VISIBLE); 
+					lay90f.setVisibility(View.VISIBLE); 
+					lay90g.setVisibility(View.VISIBLE); 
+					lay90h.setVisibility(View.VISIBLE); 
+					lay90i.setVisibility(View.VISIBLE); 
+					lay90j.setVisibility(View.VISIBLE); 
 				}
 				else if (checkedId == R.id.radio0) {
 					op2 = "No acepta cuestionario";
 					radio_abandono3.setChecked(true);
 					
 					ocultaEstadisticas();
-					muestraDireccion();
+					lay3 .setVisibility(View.GONE);
+					lay4 .setVisibility(View.GONE);
+					lay5 .setVisibility(View.GONE);
+					lay6 .setVisibility(View.GONE);
+					lay6a .setVisibility(View.GONE);
+					lay6b .setVisibility(View.GONE);
+					lay6c .setVisibility(View.GONE);
+					lay7 .setVisibility(View.GONE);
+					lay7a .setVisibility(View.GONE);
+					
+					op3="No aplica";
+					op4 ="No aplica";
+					op5 ="No aplica";
+					op6 ="No aplica";
+					op6a="No aplica";
+					op6b="No aplica";
+					op6c="No aplica";
+					op7 ="No aplica";
+					op7a="No aplica";
+					
+					rdPregunta3.clearCheck();
+					rdPregunta4 .clearCheck();
+					rdPregunta5 .clearCheck();
+					rdPregunta6 .clearCheck();
+					rdPregunta6a.clearCheck();
+					rdPregunta6b.clearCheck();
+					rdPregunta6c.clearCheck();
+					rdPregunta7 .clearCheck();
+					rdPregunta7a.clearCheck();
+					
+					
+					
+//					ocultaAdulto_1();
+//					ocultaAdulto_2();
+//					
+					
+					
+					lay90.setVisibility(View.VISIBLE); 
+					lay90a.setVisibility(View.VISIBLE); 
+					lay90b.setVisibility(View.VISIBLE); 
+					lay90c.setVisibility(View.VISIBLE); 
+					lay90d.setVisibility(View.VISIBLE); 
+					lay90e.setVisibility(View.VISIBLE); 
+					lay90f.setVisibility(View.VISIBLE); 
+					lay90g.setVisibility(View.VISIBLE); 
+					lay90h.setVisibility(View.VISIBLE); 
+					lay90i.setVisibility(View.VISIBLE); 
+					lay90j.setVisibility(View.VISIBLE); 
 				}
 			}
 		});
@@ -1869,7 +2095,38 @@ public class MainActivityPantalla1 extends Activity {
 					op7 = "Sí";
 					lay7a .setVisibility(View.VISIBLE);
 
-				muestraEstadisticas();
+			
+				layEst.setVisibility(View.VISIBLE);
+				layEdad.setVisibility(View.VISIBLE);
+				layHijos.setVisibility(View.VISIBLE);
+				layAporta.setVisibility(View.VISIBLE);
+				layOcupacion.setVisibility(View.VISIBLE);
+				layTrabajaron.setVisibility(View.VISIBLE);
+				layCoche.setVisibility(View.VISIBLE);
+				layCuantosCoches.setVisibility(View.VISIBLE);
+				layCuartos.setVisibility(View.VISIBLE);
+				layCuartosDormir.setVisibility(View.VISIBLE);
+				layFocos.setVisibility(View.VISIBLE);
+				layBanos.setVisibility(View.VISIBLE);
+				layRegadera.setVisibility(View.VISIBLE);
+				layInternet.setVisibility(View.VISIBLE);
+				layEstufa.setVisibility(View.VISIBLE);
+				layTipoPiso.setVisibility(View.VISIBLE);
+				layTipoVivienda.setVisibility(View.VISIBLE);
+				layGenero.setVisibility(View.VISIBLE);
+				
+				
+				lay90.setVisibility(View.VISIBLE); 
+				lay90a.setVisibility(View.VISIBLE); 
+				lay90b.setVisibility(View.VISIBLE); 
+				lay90c.setVisibility(View.VISIBLE); 
+				lay90d.setVisibility(View.VISIBLE); 
+				lay90e.setVisibility(View.VISIBLE); 
+				lay90f.setVisibility(View.VISIBLE); 
+				lay90g.setVisibility(View.VISIBLE); 
+				lay90h.setVisibility(View.VISIBLE); 
+				lay90i.setVisibility(View.VISIBLE); 
+				lay90j.setVisibility(View.VISIBLE); 
 
 
 				}
@@ -1882,6 +2139,7 @@ public class MainActivityPantalla1 extends Activity {
 					ocultaAdulto_1();
 					ocultaAdulto_2();
 					lay15 .setVisibility(View.VISIBLE);
+					rdPregunta15.clearCheck();
 			
 					
 					
@@ -1897,6 +2155,7 @@ public class MainActivityPantalla1 extends Activity {
 					ocultaAdulto_1();
 					ocultaAdulto_2();
 					lay15 .setVisibility(View.VISIBLE);
+					rdPregunta15.clearCheck();
 					
 					
 
@@ -1952,7 +2211,7 @@ public class MainActivityPantalla1 extends Activity {
 
 				}
 				else if (checkedId == R.id.radio0) {
-					op7a = "Cinco";
+					op7a = "Cinco o más";
 					
 					muestraAdulto_1();
 					muestraAdulto_2();
@@ -1983,6 +2242,43 @@ public class MainActivityPantalla1 extends Activity {
 					lay9_1.setVisibility(View.GONE);
 					op9_1="No aplica";
 					rdPregunta9_1.clearCheck();
+					
+					lay10a_1 .setVisibility(View.VISIBLE);
+					lay10b_1 .setVisibility(View.VISIBLE);
+					lay10c_1 .setVisibility(View.VISIBLE);
+					lay11_1 .setVisibility(View.VISIBLE);
+					lay12_1 .setVisibility(View.VISIBLE);
+					lay13_1 .setVisibility(View.VISIBLE);
+					lay13a_1 .setVisibility(View.VISIBLE);
+					lay13b_1 .setVisibility(View.VISIBLE);
+					lay13c_1 .setVisibility(View.VISIBLE);
+					lay14_1 .setVisibility(View.VISIBLE);
+					lay14a_1 .setVisibility(View.VISIBLE);
+					lay14b_1 .setVisibility(View.VISIBLE);
+
+					op10_1 ="sin datos";
+					op10a_1 ="sin datos";
+					op10b_1 ="sin datos";
+					op10c_1 ="sin datos";
+					op11_1 ="sin datos";
+					op12_1 ="sin datos";
+					op13a_1 ="sin datos";
+					op13b_1 ="sin datos";
+					op13c_1 ="sin datos";
+					op14a_1 ="sin datos";
+					op14b_1 ="sin datos";
+					
+					rdPregunta10_1.clearCheck();
+					rdPregunta10a_1 .clearCheck();
+					rdPregunta10b_1 .clearCheck();
+					rdPregunta10c_1 .clearCheck();
+					rdPregunta11_1.clearCheck();
+					rdPregunta12_1.clearCheck();
+					rdPregunta13a_1.clearCheck();
+					rdPregunta13b_1.clearCheck();
+					rdPregunta13c_1.clearCheck();
+					rdPregunta14a_1.clearCheck();
+					rdPregunta14b_1.clearCheck();
 
 				}
 
@@ -1998,13 +2294,6 @@ public class MainActivityPantalla1 extends Activity {
 			}
 
 		});
-
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 		rdPregunta9_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -2040,9 +2329,20 @@ public class MainActivityPantalla1 extends Activity {
 					op13a_1 ="sin datos";
 					op13b_1 ="sin datos";
 					op13c_1 ="sin datos";
-					op14_1 ="sin datos";
 					op14a_1 ="sin datos";
 					op14b_1 ="sin datos";
+					
+					rdPregunta10_1.clearCheck();
+					rdPregunta10a_1 .clearCheck();
+					rdPregunta10b_1 .clearCheck();
+					rdPregunta10c_1 .clearCheck();
+					rdPregunta11_1.clearCheck();
+					rdPregunta12_1.clearCheck();
+					rdPregunta13a_1.clearCheck();
+					rdPregunta13b_1.clearCheck();
+					rdPregunta13c_1.clearCheck();
+					rdPregunta14a_1.clearCheck();
+					rdPregunta14b_1.clearCheck();
 					
 
 				}
@@ -2074,9 +2374,20 @@ public class MainActivityPantalla1 extends Activity {
 					op13a_1 ="No aplica";
 					op13b_1 ="No aplica";
 					op13c_1 ="No aplica";
-					op14_1 ="No aplica";
 					op14a_1 ="No aplica";
 					op14b_1 ="No aplica";
+					
+					rdPregunta10_1.clearCheck();
+					rdPregunta10a_1 .clearCheck();
+					rdPregunta10b_1 .clearCheck();
+					rdPregunta10c_1 .clearCheck();
+					rdPregunta11_1.clearCheck();
+					rdPregunta12_1.clearCheck();
+					rdPregunta13a_1.clearCheck();
+					rdPregunta13b_1.clearCheck();
+					rdPregunta13c_1.clearCheck();
+					rdPregunta14a_1.clearCheck();
+					rdPregunta14b_1.clearCheck();
 					
 
 				}
@@ -2084,13 +2395,6 @@ public class MainActivityPantalla1 extends Activity {
 			}
 
 		});
-
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 		rdPregunta10_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -2114,6 +2418,7 @@ public class MainActivityPantalla1 extends Activity {
 					lay15.setVisibility(View.VISIBLE); 
 					op15="sin datos";
 					rdPregunta15.clearCheck();
+					rdPregunta12_1.clearCheck();
 
 				}
 
@@ -2134,7 +2439,22 @@ public class MainActivityPantalla1 extends Activity {
 					op15="sin datos";
 					rdPregunta15.clearCheck();
 					
-					muestraDireccion();
+					rdPregunta12_1.clearCheck();
+					
+					
+					
+					
+					lay90.setVisibility(View.VISIBLE); 
+					lay90a.setVisibility(View.VISIBLE); 
+					lay90b.setVisibility(View.VISIBLE); 
+					lay90c.setVisibility(View.VISIBLE); 
+					lay90d.setVisibility(View.VISIBLE); 
+					lay90e.setVisibility(View.VISIBLE); 
+					lay90f.setVisibility(View.VISIBLE); 
+					lay90g.setVisibility(View.VISIBLE); 
+					lay90h.setVisibility(View.VISIBLE); 
+					lay90i.setVisibility(View.VISIBLE); 
+					lay90j.setVisibility(View.VISIBLE); 
 
 				}
 
@@ -2151,20 +2471,26 @@ public class MainActivityPantalla1 extends Activity {
 					op10c_1="No aplica";
 					rdPregunta10c_1.clearCheck();
 
-muestraDireccion();
+					rdPregunta12_1.clearCheck();		
+					
+					
+					lay90.setVisibility(View.VISIBLE); 
+					lay90a.setVisibility(View.VISIBLE); 
+					lay90b.setVisibility(View.VISIBLE); 
+					lay90c.setVisibility(View.VISIBLE); 
+					lay90d.setVisibility(View.VISIBLE); 
+					lay90e.setVisibility(View.VISIBLE); 
+					lay90f.setVisibility(View.VISIBLE); 
+					lay90g.setVisibility(View.VISIBLE); 
+					lay90h.setVisibility(View.VISIBLE); 
+					lay90i.setVisibility(View.VISIBLE); 
+					lay90j.setVisibility(View.VISIBLE); 
 
 				}
 
 			}
 
 		});
-
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 		rdPregunta10a_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -2212,13 +2538,6 @@ muestraDireccion();
 
 		});
 
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 		rdPregunta10b_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -2256,13 +2575,6 @@ muestraDireccion();
 
 		});
 
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 		rdPregunta10c_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -2297,8 +2609,6 @@ muestraDireccion();
 
 		});
 
-
-
 		rdPregunta11_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -2313,23 +2623,68 @@ muestraDireccion();
 			}
 		});
 
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 		rdPregunta12_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
 
 
 
-				 if (checkedId == R.id.radio0) {
+				 if (checkedId == R.id.radio12_0_1) {
 
 					op12_1 = "No sabe / No contestó";
 
 					editPregunta12_1.setText("");
+					editPregunta12a_1.setText("");
+					
+					
+					if(op10_1.equals("No")){
+						
+						lay13_1 .setVisibility(View.VISIBLE);
+						lay13a_1 .setVisibility(View.VISIBLE);
+						lay13b_1 .setVisibility(View.VISIBLE);
+						lay13c_1 .setVisibility(View.VISIBLE);
+						lay14_1 .setVisibility(View.VISIBLE);
+						lay14a_1 .setVisibility(View.VISIBLE);
+						lay14b_1 .setVisibility(View.VISIBLE);
+
+						op13a_1 ="sin datos";
+						op13b_1 ="sin datos";
+						op13c_1 ="sin datos";
+						op14_1 ="sin datos";
+						op14a_1 ="sin datos";
+						op14b_1 ="sin datos";
+						
+						rdPregunta13a_1.clearCheck();
+						rdPregunta13b_1.clearCheck();
+						rdPregunta13c_1.clearCheck();
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
+						
+						
+					}else{
+					
+					
+					lay13_1 .setVisibility(View.GONE);
+					lay13a_1 .setVisibility(View.GONE);
+					lay13b_1 .setVisibility(View.GONE);
+					lay13c_1 .setVisibility(View.GONE);
+					lay14_1 .setVisibility(View.GONE);
+					lay14a_1 .setVisibility(View.GONE);
+					lay14b_1 .setVisibility(View.GONE);
+
+					op13a_1 ="No aplica";
+					op13b_1 ="No aplica";
+					op13c_1 ="No aplica";
+					op14_1 ="No aplica";
+					op14a_1 ="No aplica";
+					op14b_1 ="No aplica";
+					
+					rdPregunta13a_1.clearCheck();
+					rdPregunta13b_1.clearCheck();
+					rdPregunta13c_1.clearCheck();
+					rdPregunta14a_1.clearCheck();
+					rdPregunta14b_1.clearCheck();
+					}
 
 				}
 
@@ -2337,35 +2692,37 @@ muestraDireccion();
 
 		});
 
-
 		editPregunta12_1.addTextChangedListener(new TextWatcher() {
-
 			@Override
-
 			public void afterTextChanged(Editable s) {
-				
-				
-				
 			}
-
 			@Override
-
 			public void beforeTextChanged(CharSequence s, int start,int count, int after) {
-				
-				
-				
-
 			}
-
 			@Override
-
 			public void onTextChanged(CharSequence s, int start,int before, int count) {
-
 				if(s.length() != 0){
-
-					rdPregunta12_1.clearCheck();
 					
-					Integer edad=Integer.parseInt(editPregunta12_1.getText().toString());
+
+						rdPregunta12_1.clearCheck();
+					
+						String laEdad=editPregunta12_1.getText().toString();
+						String losMeses=editPregunta12a_1.getText().toString();
+						
+						if(laEdad.length()==0){
+							laEdad="0";
+						}else{
+							laEdad=laEdad;
+						}
+					
+					if(losMeses.length()==0){
+						losMeses="0";
+					}else{
+						losMeses=losMeses;
+					}
+					
+					Integer edad=Integer.parseInt(laEdad);
+					Integer meses=Integer.parseInt(losMeses);
 					
 					if(op10_1.equals("Si")){
 						
@@ -2380,9 +2737,15 @@ muestraDireccion();
 						op13a_1 ="No aplica";
 						op13b_1 ="No aplica";
 						op13c_1 ="No aplica";
-						op14_1 ="No aplica";
 						op14a_1 ="No aplica";
 						op14b_1 ="No aplica";
+						
+						rdPregunta13a_1.clearCheck();
+						rdPregunta13b_1.clearCheck();
+						rdPregunta13c_1.clearCheck();
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
+						
 					}else if(edad >= 68){
 						lay13_1 .setVisibility(View.GONE);
 						lay13a_1 .setVisibility(View.GONE);
@@ -2398,7 +2761,14 @@ muestraDireccion();
 						op14_1 ="No aplica";
 						op14a_1 ="No aplica";
 						op14b_1 ="No aplica";
-					}else if(edad >= 65 || edad <= 67){
+						
+						rdPregunta13a_1.clearCheck();
+						rdPregunta13b_1.clearCheck();
+						rdPregunta13c_1.clearCheck();
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
+						
+					}else if(edad >= 65  || (edad >= 67 && meses <=11)){
 						lay13_1 .setVisibility(View.VISIBLE);
 						lay13a_1 .setVisibility(View.VISIBLE);
 						lay13b_1 .setVisibility(View.VISIBLE);
@@ -2413,22 +2783,166 @@ muestraDireccion();
 						op14_1 ="sin datos";
 						op14a_1 ="sin datos";
 						op14b_1 ="sin datos";
+						
+						rdPregunta13a_1.clearCheck();
+						rdPregunta13b_1.clearCheck();
+						rdPregunta13c_1.clearCheck();
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
+						
+					}else{
+					
+						lay13_1 .setVisibility(View.GONE);
+						lay13a_1 .setVisibility(View.GONE);
+						lay13b_1 .setVisibility(View.GONE);
+						lay13c_1 .setVisibility(View.GONE);
+						lay14_1 .setVisibility(View.GONE);
+						lay14a_1 .setVisibility(View.GONE);
+						lay14b_1 .setVisibility(View.GONE);
+
+						op13a_1 ="No aplica";
+						op13b_1 ="No aplica";
+						op13c_1 ="No aplica";
+						op14_1 ="No aplica";
+						op14a_1 ="No aplica";
+						op14b_1 ="No aplica";
+						
+						rdPregunta13a_1.clearCheck();
+						rdPregunta13b_1.clearCheck();
+						rdPregunta13c_1.clearCheck();
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
+						
 					}
+					
 
 				}
 
 			}
 
 		});
-
-
-
-
 		
+		editPregunta12a_1.addTextChangedListener(new TextWatcher() {
+			@Override
+			public void afterTextChanged(Editable s) {
+			}
+			@Override
+			public void beforeTextChanged(CharSequence s, int start,int count, int after) {
+			}
+			@Override
+			public void onTextChanged(CharSequence s, int start,int before, int count) {
+				if(s.length() != 0){
+					
+					rdPregunta12_1.clearCheck();
+					String laEdad=editPregunta12_1.getText().toString();
+					String losMeses=editPregunta12a_1.getText().toString();
+					
+					if(laEdad.length()==0){
+						laEdad="0";
+					}else{
+						laEdad=laEdad;
+					}
+				
+				if(losMeses.length()==0){
+					losMeses="0";
+				}else{
+					losMeses=losMeses;
+				}
+				
+				Integer edad=Integer.parseInt(laEdad);
+				Integer meses=Integer.parseInt(losMeses);
+					if(op10_1.equals("Si")){
+						
+						lay13_1 .setVisibility(View.GONE);
+						lay13a_1 .setVisibility(View.GONE);
+						lay13b_1 .setVisibility(View.GONE);
+						lay13c_1 .setVisibility(View.GONE);
+						lay14_1 .setVisibility(View.GONE);
+						lay14a_1 .setVisibility(View.GONE);
+						lay14b_1 .setVisibility(View.GONE);
 
+						op13a_1 ="No aplica";
+						op13b_1 ="No aplica";
+						op13c_1 ="No aplica";
+						op14a_1 ="No aplica";
+						op14b_1 ="No aplica";
+						
+						rdPregunta13a_1.clearCheck();
+						rdPregunta13b_1.clearCheck();
+						rdPregunta13c_1.clearCheck();
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
+					}else if(edad >= 68){
+						lay13_1 .setVisibility(View.GONE);
+						lay13a_1 .setVisibility(View.GONE);
+						lay13b_1 .setVisibility(View.GONE);
+						lay13c_1 .setVisibility(View.GONE);
+						lay14_1 .setVisibility(View.GONE);
+						lay14a_1 .setVisibility(View.GONE);
+						lay14b_1 .setVisibility(View.GONE);
 
+						op13a_1 ="No aplica";
+						op13b_1 ="No aplica";
+						op13c_1 ="No aplica";
+						op14a_1 ="No aplica";
+						op14b_1 ="No aplica";
+						
+						rdPregunta13a_1.clearCheck();
+						rdPregunta13b_1.clearCheck();
+						rdPregunta13c_1.clearCheck();
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
+						
+					}else if(edad >= 65  || (edad >= 67 && meses <=11)){
+						lay13_1 .setVisibility(View.VISIBLE);
+						lay13a_1 .setVisibility(View.VISIBLE);
+						lay13b_1 .setVisibility(View.VISIBLE);
+						lay13c_1 .setVisibility(View.VISIBLE);
+						lay14_1 .setVisibility(View.VISIBLE);
+						lay14a_1 .setVisibility(View.VISIBLE);
+						lay14b_1 .setVisibility(View.VISIBLE);
 
+						op13a_1 ="sin datos";
+						op13b_1 ="sin datos";
+						op13c_1 ="sin datos";
+						op14_1 ="sin datos";
+						op14a_1 ="sin datos";
+						op14b_1 ="sin datos";
+						
+						rdPregunta13a_1.clearCheck();
+						rdPregunta13b_1.clearCheck();
+						rdPregunta13c_1.clearCheck();
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
+					}else{
+					
+						lay13_1 .setVisibility(View.GONE);
+						lay13a_1 .setVisibility(View.GONE);
+						lay13b_1 .setVisibility(View.GONE);
+						lay13c_1 .setVisibility(View.GONE);
+						lay14_1 .setVisibility(View.GONE);
+						lay14a_1 .setVisibility(View.GONE);
+						lay14b_1 .setVisibility(View.GONE);
 
+						op13a_1 ="No aplica";
+						op13b_1 ="No aplica";
+						op13c_1 ="No aplica";
+						op14a_1 ="No aplica";
+						op14b_1 ="No aplica";
+						
+						rdPregunta13a_1.clearCheck();
+						rdPregunta13b_1.clearCheck();
+						rdPregunta13c_1.clearCheck();
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
+						
+					}
+					
+				}
+
+			}
+
+		});
 
 		rdPregunta13a_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -2444,9 +2958,11 @@ muestraDireccion();
 					lay14a_1 .setVisibility(View.GONE);
 					lay14b_1 .setVisibility(View.GONE);
 
-					op14_1 ="No aplica";
 					op14a_1 ="No aplica";
 					op14b_1 ="No aplica";
+
+					rdPregunta14a_1.clearCheck();
+					rdPregunta14b_1.clearCheck();
 
 
 				}
@@ -2454,6 +2970,7 @@ muestraDireccion();
 				else if (checkedId == R.id.radio2) {
 
 					op13a_1 = "No";
+					op13c_1="sin datos";
 					rdPregunta13c_1.clearCheck();
 
 
@@ -2462,6 +2979,7 @@ muestraDireccion();
 				else if (checkedId == R.id.radio0) {
 
 					op13a_1 = "No sabe / No contestó";
+					op13c_1="sin datos";
 					rdPregunta13c_1.clearCheck();
 
 				}
@@ -2469,15 +2987,6 @@ muestraDireccion();
 			}
 
 		});
-
-
-
-
-
-		
-
-
-
 
 		rdPregunta13b_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -2494,9 +3003,10 @@ muestraDireccion();
 					lay14a_1 .setVisibility(View.GONE);
 					lay14b_1 .setVisibility(View.GONE);
 
-					op14_1 ="No aplica";
 					op14a_1 ="No aplica";
 					op14b_1 ="No aplica";
+					rdPregunta14a_1.clearCheck();
+					rdPregunta14b_1.clearCheck();
 
 
 
@@ -2505,6 +3015,7 @@ muestraDireccion();
 				else if (checkedId == R.id.radio2) {
 
 					op13b_1 = "No";
+					op13c_1="sin datos";
 					rdPregunta13c_1.clearCheck();
 
 				}
@@ -2512,6 +3023,7 @@ muestraDireccion();
 				else if (checkedId == R.id.radio0) {
 
 					op13b_1 = "No sabe / No contestó";
+					op13c_1="sin datos";
 					rdPregunta13c_1.clearCheck();
 
 				}
@@ -2519,15 +3031,6 @@ muestraDireccion();
 			}
 
 		});
-
-
-	
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 		rdPregunta13c_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -2545,6 +3048,9 @@ muestraDireccion();
 					op14_1 ="No aplica";
 					op14a_1 ="No aplica";
 					op14b_1 ="No aplica";
+					
+					rdPregunta14a_1.clearCheck();
+					rdPregunta14b_1.clearCheck();
 
 
 
@@ -2560,9 +3066,11 @@ muestraDireccion();
 						lay14a_1 .setVisibility(View.VISIBLE);
 						lay14b_1 .setVisibility(View.VISIBLE);
 
-						op14_1 ="sin datos";
 						op14a_1 ="sin datos";
 						op14b_1 ="sin datos";
+						
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
 						
 					}
 					
@@ -2572,9 +3080,11 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						lay14a_1 .setVisibility(View.VISIBLE);
 						lay14b_1 .setVisibility(View.VISIBLE);
 
-						op14_1 ="sin datos";
 						op14a_1 ="sin datos";
 						op14b_1 ="sin datos";
+						
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
 						
 }
 
@@ -2589,9 +3099,12 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						lay14a_1 .setVisibility(View.VISIBLE);
 						lay14b_1 .setVisibility(View.VISIBLE);
 
-						op14_1 ="sin datos";
+						
 						op14a_1 ="sin datos";
 						op14b_1 ="sin datos";
+						
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
 						
 					}
 					
@@ -2601,9 +3114,11 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						lay14a_1 .setVisibility(View.VISIBLE);
 						lay14b_1 .setVisibility(View.VISIBLE);
 
-						op14_1 ="sin datos";
 						op14a_1 ="sin datos";
 						op14b_1 ="sin datos";
+						
+						rdPregunta14a_1.clearCheck();
+						rdPregunta14b_1.clearCheck();
 						
 }
 
@@ -2613,17 +3128,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 			}
 
 		});
-
-
-		
-
-
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 		rdPregunta14_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -2635,13 +3139,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 			}
 
 		});
-
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 		rdPregunta14a_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -2670,13 +3167,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 			}
 
 		});
-
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 		rdPregunta14b_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -2723,6 +3213,43 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						lay9_2.setVisibility(View.GONE);
 						op9_2="No aplica";
 						rdPregunta9_2.clearCheck();
+						
+						lay10a_2 .setVisibility(View.VISIBLE);
+						lay10b_2 .setVisibility(View.VISIBLE);
+						lay10c_2 .setVisibility(View.VISIBLE);
+						lay11_2 .setVisibility(View.VISIBLE);
+						lay12_2 .setVisibility(View.VISIBLE);
+						lay13_2 .setVisibility(View.VISIBLE);
+						lay13a_2 .setVisibility(View.VISIBLE);
+						lay13b_2 .setVisibility(View.VISIBLE);
+						lay13c_2 .setVisibility(View.VISIBLE);
+						lay14_2 .setVisibility(View.VISIBLE);
+						lay14a_2 .setVisibility(View.VISIBLE);
+						lay14b_2 .setVisibility(View.VISIBLE);
+
+						op10_2 ="sin datos";
+						op10a_2 ="sin datos";
+						op10b_2 ="sin datos";
+						op10c_2 ="sin datos";
+						op11_2 ="sin datos";
+						op12_2 ="sin datos";
+						op13a_2 ="sin datos";
+						op13b_2 ="sin datos";
+						op13c_2 ="sin datos";
+						op14a_2 ="sin datos";
+						op14b_2 ="sin datos";
+						
+						rdPregunta10_2.clearCheck();
+						rdPregunta10a_2 .clearCheck();
+						rdPregunta10b_2 .clearCheck();
+						rdPregunta10c_2 .clearCheck();
+						rdPregunta11_2.clearCheck();
+						rdPregunta12_2.clearCheck();
+						rdPregunta13a_2.clearCheck();
+						rdPregunta13b_2.clearCheck();
+						rdPregunta13c_2.clearCheck();
+						rdPregunta14a_2.clearCheck();
+						rdPregunta14b_2.clearCheck();
 
 					}
 
@@ -2738,13 +3265,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				}
 
 			});
-
-
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 			rdPregunta9_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -2780,9 +3300,20 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						op13a_2 ="sin datos";
 						op13b_2 ="sin datos";
 						op13c_2 ="sin datos";
-						op14_2 ="sin datos";
 						op14a_2 ="sin datos";
 						op14b_2 ="sin datos";
+						
+						rdPregunta10_2.clearCheck();
+						rdPregunta10a_2 .clearCheck();
+						rdPregunta10b_2 .clearCheck();
+						rdPregunta10c_2 .clearCheck();
+						rdPregunta11_2.clearCheck();
+						rdPregunta12_2.clearCheck();
+						rdPregunta13a_2.clearCheck();
+						rdPregunta13b_2.clearCheck();
+						rdPregunta13c_2.clearCheck();
+						rdPregunta14a_2.clearCheck();
+						rdPregunta14b_2.clearCheck();
 						
 
 					}
@@ -2814,9 +3345,20 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						op13a_2 ="No aplica";
 						op13b_2 ="No aplica";
 						op13c_2 ="No aplica";
-						op14_2 ="No aplica";
 						op14a_2 ="No aplica";
 						op14b_2 ="No aplica";
+						
+						rdPregunta10_2.clearCheck();
+						rdPregunta10a_2 .clearCheck();
+						rdPregunta10b_2 .clearCheck();
+						rdPregunta10c_2 .clearCheck();
+						rdPregunta11_2.clearCheck();
+						rdPregunta12_2.clearCheck();
+						rdPregunta13a_2.clearCheck();
+						rdPregunta13b_2.clearCheck();
+						rdPregunta13c_2.clearCheck();
+						rdPregunta14a_2.clearCheck();
+						rdPregunta14b_2.clearCheck();
 						
 
 					}
@@ -2824,13 +3366,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				}
 
 			});
-
-
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 			rdPregunta10_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -2850,6 +3385,11 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						lay10c_2.setVisibility(View.VISIBLE);
 						op10c_2="sin datos";
 						rdPregunta10c_2.clearCheck();
+						
+						lay15.setVisibility(View.VISIBLE); 
+						op15="sin datos";
+						rdPregunta15.clearCheck();
+						rdPregunta12_2.clearCheck();
 
 					}
 
@@ -2865,6 +3405,26 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						lay10c_2.setVisibility(View.GONE);
 						op10c_2="No aplica";
 						rdPregunta10c_2.clearCheck();
+						
+						lay15.setVisibility(View.VISIBLE); 
+						op15="sin datos";
+						rdPregunta15.clearCheck();
+						rdPregunta12_2.clearCheck();
+						
+						
+						
+						
+						lay90.setVisibility(View.VISIBLE); 
+						lay90a.setVisibility(View.VISIBLE); 
+						lay90b.setVisibility(View.VISIBLE); 
+						lay90c.setVisibility(View.VISIBLE); 
+						lay90d.setVisibility(View.VISIBLE); 
+						lay90e.setVisibility(View.VISIBLE); 
+						lay90f.setVisibility(View.VISIBLE); 
+						lay90g.setVisibility(View.VISIBLE); 
+						lay90h.setVisibility(View.VISIBLE); 
+						lay90i.setVisibility(View.VISIBLE); 
+						lay90j.setVisibility(View.VISIBLE); 
 
 					}
 
@@ -2880,20 +3440,28 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						lay10c_2.setVisibility(View.GONE);
 						op10c_2="No aplica";
 						rdPregunta10c_2.clearCheck();
+						rdPregunta12_2.clearCheck();
 
+										
+						
+						
+						lay90.setVisibility(View.VISIBLE); 
+						lay90a.setVisibility(View.VISIBLE); 
+						lay90b.setVisibility(View.VISIBLE); 
+						lay90c.setVisibility(View.VISIBLE); 
+						lay90d.setVisibility(View.VISIBLE); 
+						lay90e.setVisibility(View.VISIBLE); 
+						lay90f.setVisibility(View.VISIBLE); 
+						lay90g.setVisibility(View.VISIBLE); 
+						lay90h.setVisibility(View.VISIBLE); 
+						lay90i.setVisibility(View.VISIBLE); 
+						lay90j.setVisibility(View.VISIBLE); 
 
 					}
 
 				}
 
 			});
-
-
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 			rdPregunta10a_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -2941,13 +3509,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 
 			});
 
-
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 			rdPregunta10b_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
 				public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -2985,13 +3546,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 
 			});
 
-
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 			rdPregunta10c_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
 				public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -3026,8 +3580,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 
 			});
 
-
-
 			rdPregunta11_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
 				public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -3042,60 +3594,102 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				}
 			});
 
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 			rdPregunta12_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
 				public void onCheckedChanged(RadioGroup group, int checkedId) {
 
 
 
-					 if (checkedId == R.id.radio0) {
+					 if (checkedId == R.id.radio12_0_2) {
 
 						op12_2 = "No sabe / No contestó";
 
 						editPregunta12_2.setText("");
+						editPregunta12a_2.setText("");
+						
+						if(op10_2.equals("No")){
+						
+							lay13_2 .setVisibility(View.VISIBLE);
+							lay13a_2 .setVisibility(View.VISIBLE);
+							lay13b_2 .setVisibility(View.VISIBLE);
+							lay13c_2 .setVisibility(View.VISIBLE);
+							lay14_2 .setVisibility(View.VISIBLE);
+							lay14a_2 .setVisibility(View.VISIBLE);
+							lay14b_2 .setVisibility(View.VISIBLE);
 
+							op13a_2 ="sin datos";
+							op13b_2 ="sin datos";
+							op13c_2 ="sin datos";
+							op14_2 ="sin datos";
+							op14a_2 ="sin datos";
+							op14b_2 ="sin datos";
+							
+							rdPregunta13a_2.clearCheck();
+							rdPregunta13b_2.clearCheck();
+							rdPregunta13c_2.clearCheck();
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
+							
+						}else{
+						
+						lay13_2 .setVisibility(View.GONE);
+						lay13a_2 .setVisibility(View.GONE);
+						lay13b_2 .setVisibility(View.GONE);
+						lay13c_2 .setVisibility(View.GONE);
+						lay14_2 .setVisibility(View.GONE);
+						lay14a_2 .setVisibility(View.GONE);
+						lay14b_2 .setVisibility(View.GONE);
+
+						op13a_2 ="No aplica";
+						op13b_2 ="No aplica";
+						op13c_2 ="No aplica";
+						op14_2 ="No aplica";
+						op14a_2 ="No aplica";
+						op14b_2 ="No aplica";
+						
+						rdPregunta13a_2.clearCheck();
+						rdPregunta13b_2.clearCheck();
+						rdPregunta13c_2.clearCheck();
+						rdPregunta14a_2.clearCheck();
+						rdPregunta14b_2.clearCheck();
+						}
 					}
 
 				}
 
 			});
 
-
 			editPregunta12_2.addTextChangedListener(new TextWatcher() {
-
 				@Override
-
 				public void afterTextChanged(Editable s) {
-					
-					
-					
 				}
-
 				@Override
-
 				public void beforeTextChanged(CharSequence s, int start,int count, int after) {
-					
-					
-					
-
 				}
-
 				@Override
-
 				public void onTextChanged(CharSequence s, int start,int before, int count) {
-
 					if(s.length() != 0){
-
-						rdPregunta12_2.clearCheck();
 						
-						Integer edad=Integer.parseInt(editPregunta12_2.getText().toString());
+				
+							rdPregunta12_2.clearCheck();
 						
+							String laEdad=editPregunta12_2.getText().toString();
+							String losMeses=editPregunta12a_2.getText().toString();
+							
+							if(laEdad.length()==0){
+								laEdad="0";
+							}else{
+								laEdad=laEdad;
+							}
+						
+						if(losMeses.length()==0){
+							losMeses="0";
+						}else{
+							losMeses=losMeses;
+						}
+						
+						Integer edad=Integer.parseInt(laEdad);
+						Integer meses=Integer.parseInt(losMeses);
 						if(op10_2.equals("Si")){
 							
 							lay13_2 .setVisibility(View.GONE);
@@ -3109,9 +3703,15 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 							op13a_2 ="No aplica";
 							op13b_2 ="No aplica";
 							op13c_2 ="No aplica";
-							op14_2 ="No aplica";
 							op14a_2 ="No aplica";
 							op14b_2 ="No aplica";
+							
+							rdPregunta13a_2.clearCheck();
+							rdPregunta13b_2.clearCheck();
+							rdPregunta13c_2.clearCheck();
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
+							
 						}else if(edad >= 68){
 							lay13_2 .setVisibility(View.GONE);
 							lay13a_2 .setVisibility(View.GONE);
@@ -3127,7 +3727,14 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 							op14_2 ="No aplica";
 							op14a_2 ="No aplica";
 							op14b_2 ="No aplica";
-						}else if(edad >= 65 || edad <= 67){
+							
+							rdPregunta13a_2.clearCheck();
+							rdPregunta13b_2.clearCheck();
+							rdPregunta13c_2.clearCheck();
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
+							
+						}else if(edad >= 65  || (edad >= 67 && meses <=11)){
 							lay13_2 .setVisibility(View.VISIBLE);
 							lay13a_2 .setVisibility(View.VISIBLE);
 							lay13b_2 .setVisibility(View.VISIBLE);
@@ -3142,22 +3749,168 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 							op14_2 ="sin datos";
 							op14a_2 ="sin datos";
 							op14b_2 ="sin datos";
+							
+							rdPregunta13a_2.clearCheck();
+							rdPregunta13b_2.clearCheck();
+							rdPregunta13c_2.clearCheck();
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
+							
+						}else{
+						
+							lay13_2 .setVisibility(View.GONE);
+							lay13a_2 .setVisibility(View.GONE);
+							lay13b_2 .setVisibility(View.GONE);
+							lay13c_2 .setVisibility(View.GONE);
+							lay14_2 .setVisibility(View.GONE);
+							lay14a_2 .setVisibility(View.GONE);
+							lay14b_2 .setVisibility(View.GONE);
+
+							op13a_2 ="No aplica";
+							op13b_2 ="No aplica";
+							op13c_2 ="No aplica";
+							op14_2 ="No aplica";
+							op14a_2 ="No aplica";
+							op14b_2 ="No aplica";
+							
+							rdPregunta13a_2.clearCheck();
+							rdPregunta13b_2.clearCheck();
+							rdPregunta13c_2.clearCheck();
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
+							
 						}
+						
 
 					}
 
 				}
 
 			});
-
-
-
-
 			
+			editPregunta12a_2.addTextChangedListener(new TextWatcher() {
+				@Override
+				public void afterTextChanged(Editable s) {
+				}
+				@Override
+				public void beforeTextChanged(CharSequence s, int start,int count, int after) {
+				}
+				@Override
+				public void onTextChanged(CharSequence s, int start,int before, int count) {
+					if(s.length() != 0){
+						
+						rdPregunta12_2.clearCheck();
+						
+						String laEdad=editPregunta12_2.getText().toString();
+						String losMeses=editPregunta12a_2.getText().toString();
+						
+						if(laEdad.length()==0){
+							laEdad="0";
+						}else{
+							laEdad=laEdad;
+						}
+					
+					if(losMeses.length()==0){
+						losMeses="0";
+					}else{
+						losMeses=losMeses;
+					}
+					
+					Integer edad=Integer.parseInt(laEdad);
+					Integer meses=Integer.parseInt(losMeses);
+					
+						if(op10_2.equals("Si")){
+							
+							lay13_2 .setVisibility(View.GONE);
+							lay13a_2 .setVisibility(View.GONE);
+							lay13b_2 .setVisibility(View.GONE);
+							lay13c_2 .setVisibility(View.GONE);
+							lay14_2 .setVisibility(View.GONE);
+							lay14a_2 .setVisibility(View.GONE);
+							lay14b_2 .setVisibility(View.GONE);
 
+							op13a_2 ="No aplica";
+							op13b_2 ="No aplica";
+							op13c_2 ="No aplica";
+							op14a_2 ="No aplica";
+							op14b_2 ="No aplica";
+							
+							rdPregunta13a_2.clearCheck();
+							rdPregunta13b_2.clearCheck();
+							rdPregunta13c_2.clearCheck();
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
+						}else if(edad >= 68){
+							lay13_2 .setVisibility(View.GONE);
+							lay13a_2 .setVisibility(View.GONE);
+							lay13b_2 .setVisibility(View.GONE);
+							lay13c_2 .setVisibility(View.GONE);
+							lay14_2 .setVisibility(View.GONE);
+							lay14a_2 .setVisibility(View.GONE);
+							lay14b_2 .setVisibility(View.GONE);
 
+							op13a_2 ="No aplica";
+							op13b_2 ="No aplica";
+							op13c_2 ="No aplica";
+							op14a_2 ="No aplica";
+							op14b_2 ="No aplica";
+							
+							rdPregunta13a_2.clearCheck();
+							rdPregunta13b_2.clearCheck();
+							rdPregunta13c_2.clearCheck();
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
+							
+						}else if(edad >= 65  || (edad >= 67 && meses <=11)){
+							lay13_2 .setVisibility(View.VISIBLE);
+							lay13a_2 .setVisibility(View.VISIBLE);
+							lay13b_2 .setVisibility(View.VISIBLE);
+							lay13c_2 .setVisibility(View.VISIBLE);
+							lay14_2 .setVisibility(View.VISIBLE);
+							lay14a_2 .setVisibility(View.VISIBLE);
+							lay14b_2 .setVisibility(View.VISIBLE);
 
+							op13a_2 ="sin datos";
+							op13b_2 ="sin datos";
+							op13c_2 ="sin datos";
+							op14_2 ="sin datos";
+							op14a_2 ="sin datos";
+							op14b_2 ="sin datos";
+							
+							rdPregunta13a_2.clearCheck();
+							rdPregunta13b_2.clearCheck();
+							rdPregunta13c_2.clearCheck();
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
+						}else{
+						
+							lay13_2 .setVisibility(View.GONE);
+							lay13a_2 .setVisibility(View.GONE);
+							lay13b_2 .setVisibility(View.GONE);
+							lay13c_2 .setVisibility(View.GONE);
+							lay14_2 .setVisibility(View.GONE);
+							lay14a_2 .setVisibility(View.GONE);
+							lay14b_2 .setVisibility(View.GONE);
 
+							op13a_2 ="No aplica";
+							op13b_2 ="No aplica";
+							op13c_2 ="No aplica";
+							op14a_2 ="No aplica";
+							op14b_2 ="No aplica";
+							
+							rdPregunta13a_2.clearCheck();
+							rdPregunta13b_2.clearCheck();
+							rdPregunta13c_2.clearCheck();
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
+							
+						}
+						
+					}
+
+				}
+
+			});
 
 			rdPregunta13a_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -3173,9 +3926,11 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						lay14a_2 .setVisibility(View.GONE);
 						lay14b_2 .setVisibility(View.GONE);
 
-						op14_2 ="No aplica";
 						op14a_2 ="No aplica";
 						op14b_2 ="No aplica";
+
+						rdPregunta14a_2.clearCheck();
+						rdPregunta14b_2.clearCheck();
 
 
 					}
@@ -3183,6 +3938,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 					else if (checkedId == R.id.radio2) {
 
 						op13a_2 = "No";
+						op13c_2="sin datos";
 						rdPregunta13c_2.clearCheck();
 
 
@@ -3191,6 +3947,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 					else if (checkedId == R.id.radio0) {
 
 						op13a_2 = "No sabe / No contestó";
+						op13c_2="sin datos";
 						rdPregunta13c_2.clearCheck();
 
 					}
@@ -3198,15 +3955,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				}
 
 			});
-
-
-
-
-
-			
-
-
-
 
 			rdPregunta13b_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -3223,9 +3971,10 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						lay14a_2 .setVisibility(View.GONE);
 						lay14b_2 .setVisibility(View.GONE);
 
-						op14_2 ="No aplica";
 						op14a_2 ="No aplica";
 						op14b_2 ="No aplica";
+						rdPregunta14a_2.clearCheck();
+						rdPregunta14b_2.clearCheck();
 
 
 
@@ -3234,6 +3983,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 					else if (checkedId == R.id.radio2) {
 
 						op13b_2 = "No";
+						op13c_2="sin datos";
 						rdPregunta13c_2.clearCheck();
 
 					}
@@ -3241,6 +3991,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 					else if (checkedId == R.id.radio0) {
 
 						op13b_2 = "No sabe / No contestó";
+						op13c_2="sin datos";
 						rdPregunta13c_2.clearCheck();
 
 					}
@@ -3248,15 +3999,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				}
 
 			});
-
-
-		
-
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 			rdPregunta13c_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -3274,6 +4016,9 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 						op14_2 ="No aplica";
 						op14a_2 ="No aplica";
 						op14b_2 ="No aplica";
+						
+						rdPregunta14a_2.clearCheck();
+						rdPregunta14b_2.clearCheck();
 
 
 
@@ -3289,9 +4034,11 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 							lay14a_2 .setVisibility(View.VISIBLE);
 							lay14b_2 .setVisibility(View.VISIBLE);
 
-							op14_2 ="sin datos";
 							op14a_2 ="sin datos";
 							op14b_2 ="sin datos";
+							
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
 							
 						}
 						
@@ -3301,9 +4048,11 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 							lay14a_2 .setVisibility(View.VISIBLE);
 							lay14b_2 .setVisibility(View.VISIBLE);
 
-							op14_2 ="sin datos";
 							op14a_2 ="sin datos";
 							op14b_2 ="sin datos";
+							
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
 							
 	}
 
@@ -3318,9 +4067,12 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 							lay14a_2 .setVisibility(View.VISIBLE);
 							lay14b_2 .setVisibility(View.VISIBLE);
 
-							op14_2 ="sin datos";
+							
 							op14a_2 ="sin datos";
 							op14b_2 ="sin datos";
+							
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
 							
 						}
 						
@@ -3330,9 +4082,11 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 							lay14a_2 .setVisibility(View.VISIBLE);
 							lay14b_2 .setVisibility(View.VISIBLE);
 
-							op14_2 ="sin datos";
 							op14a_2 ="sin datos";
 							op14b_2 ="sin datos";
+							
+							rdPregunta14a_2.clearCheck();
+							rdPregunta14b_2.clearCheck();
 							
 	}
 
@@ -3342,17 +4096,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				}
 
 			});
-
-
-			
-
-
-
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 			rdPregunta14_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -3364,13 +4107,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				}
 
 			});
-
-
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 			rdPregunta14a_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -3399,13 +4135,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				}
 
 			});
-
-
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 			rdPregunta14b_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -3437,6 +4166,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 
 
 			////  FINALIZA ADULTO_2 ///
+	
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -3457,7 +4187,42 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 					op15a="sin datos";
 					rdPregunta15a.clearCheck();
 					
-					muestraEstadisticas();
+					
+					layEst.setVisibility(View.VISIBLE);
+					layEdad.setVisibility(View.VISIBLE);
+					layHijos.setVisibility(View.VISIBLE);
+					
+					layAporta.setVisibility(View.VISIBLE);
+					layOcupacion.setVisibility(View.VISIBLE);
+					layTrabajaron.setVisibility(View.VISIBLE);
+					layCoche.setVisibility(View.VISIBLE);
+					layCuantosCoches.setVisibility(View.VISIBLE);
+					layCuartos.setVisibility(View.VISIBLE);
+					layCuartosDormir.setVisibility(View.VISIBLE);
+					layFocos.setVisibility(View.VISIBLE);
+					layBanos.setVisibility(View.VISIBLE);
+					layRegadera.setVisibility(View.VISIBLE);
+					layInternet.setVisibility(View.VISIBLE);
+					layEstufa.setVisibility(View.VISIBLE);
+					layTipoPiso.setVisibility(View.VISIBLE);
+					layTipoVivienda.setVisibility(View.VISIBLE);
+					layGenero.setVisibility(View.VISIBLE);
+				
+					
+//					
+					
+					
+					lay90.setVisibility(View.VISIBLE); 
+					lay90a.setVisibility(View.VISIBLE); 
+					lay90b.setVisibility(View.VISIBLE); 
+					lay90c.setVisibility(View.VISIBLE); 
+					lay90d.setVisibility(View.VISIBLE); 
+					lay90e.setVisibility(View.VISIBLE); 
+					lay90f.setVisibility(View.VISIBLE); 
+					lay90g.setVisibility(View.VISIBLE); 
+					lay90h.setVisibility(View.VISIBLE); 
+					lay90i.setVisibility(View.VISIBLE); 
+					lay90j.setVisibility(View.VISIBLE); 
 
 				}
 
@@ -3468,6 +4233,27 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 					op15a="No aplica";
 					rdPregunta15a.clearCheck();
 					
+					ocultaMenorConDiscapacidad_1();
+					ocultaMenorConDiscapacidad_2();
+					
+					if(op7.equals("No") || op7.equals("No sabe / No contestó")){
+						
+						ocultaEstadisticas();
+						
+						lay90.setVisibility(View.VISIBLE); 
+						lay90a.setVisibility(View.VISIBLE); 
+						lay90b.setVisibility(View.VISIBLE); 
+						lay90c.setVisibility(View.VISIBLE); 
+						lay90d.setVisibility(View.VISIBLE); 
+						lay90e.setVisibility(View.VISIBLE); 
+						lay90f.setVisibility(View.VISIBLE); 
+						lay90g.setVisibility(View.VISIBLE); 
+						lay90h.setVisibility(View.VISIBLE); 
+						lay90i.setVisibility(View.VISIBLE); 
+						lay90j.setVisibility(View.VISIBLE); 
+					}
+					
+					
 
 				}
 
@@ -3477,6 +4263,25 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 					lay15a .setVisibility(View.GONE);
 					op15a="No aplica";
 					rdPregunta15a.clearCheck();
+					ocultaMenorConDiscapacidad_1();
+					ocultaMenorConDiscapacidad_2();
+					
+					if(op7.equals("No") || op7.equals("No sabe / No contestó")){
+						
+						ocultaEstadisticas();
+						
+						lay90.setVisibility(View.VISIBLE); 
+						lay90a.setVisibility(View.VISIBLE); 
+						lay90b.setVisibility(View.VISIBLE); 
+						lay90c.setVisibility(View.VISIBLE); 
+						lay90d.setVisibility(View.VISIBLE); 
+						lay90e.setVisibility(View.VISIBLE); 
+						lay90f.setVisibility(View.VISIBLE); 
+						lay90g.setVisibility(View.VISIBLE); 
+						lay90h.setVisibility(View.VISIBLE); 
+						lay90i.setVisibility(View.VISIBLE); 
+						lay90j.setVisibility(View.VISIBLE); 
+					}
 
 				}
 
@@ -3501,6 +4306,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 
 					op15a = "1";
 					MuestraMenorConDiscapacidad_1();
+					ocultaMenorConDiscapacidad_2();
 				}
 
 				else if (checkedId == R.id.radio2) {
@@ -4108,6 +4914,16 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 					op23_1 = "Secundaria";
 
 				}
+				else if (checkedId == R.id.radio4) {
+
+					op23_1 = "CENDI ó Guardería";
+
+				}
+				else if (checkedId == R.id.radio5) {
+
+					op23_1 = "No asiste a la escuela";
+
+				}
 
 				else if (checkedId == R.id.radio0) {
 
@@ -4125,41 +4941,6 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 
 
 
-
-		rdPregunta23_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-
-
-				if (checkedId == R.id.radio1) {
-
-					op23_1 = "Preescolar";
-
-				}
-
-				else if (checkedId == R.id.radio2) {
-
-					op23_1 = "Primaria";
-
-				}
-
-				else if (checkedId == R.id.radio3) {
-
-					op23_1 = "Secundaria";
-
-				}
-
-				else if (checkedId == R.id.radio0) {
-
-					op23_1 = "No sabe / No contestó";
-
-				}
-
-			}
-
-		});
-		
 		///// FINALIZA MENOR_1  ///////
 		
 ////////////INICIA MENOR_2  //////
@@ -4728,45 +5509,14 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				op23_2 = "Secundaria";
 
 			}
+			else if (checkedId == R.id.radio4) {
 
-			else if (checkedId == R.id.radio0) {
-
-				op23_2 = "No sabe / No contestó";
-
-			}
-
-		}
-
-	});
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-	rdPregunta23_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-		@Override
-		public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-
-
-			if (checkedId == R.id.radio1) {
-
-				op23_2 = "Preescolar";
+				op23_2 = "CENDI ó Guardería";
 
 			}
+			else if (checkedId == R.id.radio5) {
 
-			else if (checkedId == R.id.radio2) {
-
-				op23_2 = "Primaria";
-
-			}
-
-			else if (checkedId == R.id.radio3) {
-
-				op23_2 = "Secundaria";
+				op23_2 = "No asiste a la escuela";
 
 			}
 
@@ -4779,6 +5529,8 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		}
 
 	});
+
+
 	
 	///// FINALIZA MENOR_2  ///////
 		
@@ -5228,15 +5980,15 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-				if (checkedId == R.id.radio1) {
+				if (checkedId == R.id.radio_abandono1) {
 					opAbandono = "1";
 					tipoEncuesta = "NORMAL";
 					btnGuardar.setText("Guardar Normal");
-				} else if (checkedId == R.id.radio2) {
+				} else if (checkedId == R.id.radio_abandono2) {
 					opAbandono = "2";
 					tipoEncuesta = "ABANDONO";
 					btnGuardar.setText("Guardar Abandono");
-				} else if (checkedId == R.id.radio3) {
+				} else if (checkedId == R.id.radio_abandono3) {
 					opAbandono = "3";
 					tipoEncuesta = "RECHAZO";
 					btnGuardar.setText("Guardar Rechazo");
@@ -5276,6 +6028,23 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		lay14_1 .setVisibility(View.VISIBLE);
 		lay14a_1 .setVisibility(View.VISIBLE);
 		lay14b_1 .setVisibility(View.VISIBLE);
+		
+		rdPregunta8_1.clearCheck();
+		rdPregunta9_1 .clearCheck();
+		rdPregunta10_1.clearCheck();
+		rdPregunta10a_1 .clearCheck();
+		rdPregunta10b_1 .clearCheck();
+		rdPregunta10c_1 .clearCheck();
+		rdPregunta11_1.clearCheck();
+		rdPregunta12_1.clearCheck();
+		rdPregunta13a_1.clearCheck();
+		rdPregunta13b_1.clearCheck();
+		rdPregunta13c_1.clearCheck();
+		rdPregunta14a_1.clearCheck();
+		rdPregunta14b_1.clearCheck();
+		
+		editPregunta12_1.setText("");
+		editPregunta12a_1.setText("");
 		
 		op8_1 ="sin datos";
 		op9_1 ="sin datos";
@@ -5317,6 +6086,24 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		op14_2 ="sin datos";
 		op14a_2 ="sin datos";
 		op14b_2 ="sin datos";
+		
+		editPregunta12_2.setText("");
+		editPregunta12a_2.setText("");
+		
+		rdPregunta8_1.clearCheck();
+		rdPregunta9_1 .clearCheck();
+		rdPregunta10_1.clearCheck();
+		rdPregunta10a_1 .clearCheck();
+		rdPregunta10b_1 .clearCheck();
+		rdPregunta10c_1 .clearCheck();
+		rdPregunta11_1.clearCheck();
+		rdPregunta12_1.clearCheck();
+		rdPregunta13a_1.clearCheck();
+		rdPregunta13b_1.clearCheck();
+		rdPregunta13c_1.clearCheck();
+		rdPregunta14a_1.clearCheck();
+		rdPregunta14b_1.clearCheck();
+		
 	}
 		
 //////// OCULTA ADULTOS  ////
@@ -5338,6 +6125,12 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		lay14a_1 .setVisibility(View.GONE);
 		lay14b_1 .setVisibility(View.GONE);
 
+		
+		editPregunta12_1.setText("");
+		editPregunta12a_1.setText("");
+		
+		
+		
 		op8_1 ="No aplica";
 		op9_1 ="No aplica";
 		op10_1 ="No aplica";
@@ -5352,6 +6145,21 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		op14_1 ="No aplica";
 		op14a_1 ="No aplica";
 		op14b_1 ="No aplica";
+		
+		rdPregunta8_1.clearCheck();
+		rdPregunta9_1 .clearCheck();
+		rdPregunta10_1.clearCheck();
+		rdPregunta10a_1 .clearCheck();
+		rdPregunta10b_1 .clearCheck();
+		rdPregunta10c_1 .clearCheck();
+		rdPregunta11_1.clearCheck();
+		rdPregunta12_1.clearCheck();
+		rdPregunta13a_1.clearCheck();
+		rdPregunta13b_1.clearCheck();
+		rdPregunta13c_1.clearCheck();
+		rdPregunta14a_1.clearCheck();
+		rdPregunta14b_1.clearCheck();
+		
 
 	}
 	
@@ -5386,6 +6194,26 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		op14_2 ="No aplica";
 		op14a_2 ="No aplica";
 		op14b_2 ="No aplica";
+		
+		
+		editPregunta12_2.setText("");
+		editPregunta12a_2.setText("");
+		
+		
+		rdPregunta8_1.clearCheck();
+		rdPregunta9_1 .clearCheck();
+		rdPregunta10_1.clearCheck();
+		rdPregunta10a_1 .clearCheck();
+		rdPregunta10b_1 .clearCheck();
+		rdPregunta10c_1 .clearCheck();
+		rdPregunta11_1.clearCheck();
+		rdPregunta12_1.clearCheck();
+		rdPregunta13a_1.clearCheck();
+		rdPregunta13b_1.clearCheck();
+		rdPregunta13c_1.clearCheck();
+		rdPregunta14a_1.clearCheck();
+		rdPregunta14b_1.clearCheck();
+		
 
 	}
 
@@ -5583,42 +6411,42 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 	
 	
 	
-	
-	
-	public void muestraDireccion() {
-	
-		lay3 .setVisibility(View.GONE);
-		lay4 .setVisibility(View.GONE);
-		lay5 .setVisibility(View.GONE);
-		lay6 .setVisibility(View.GONE);
-		lay6a .setVisibility(View.GONE);
-		lay6b .setVisibility(View.GONE);
-		lay6c .setVisibility(View.GONE);
-		lay7 .setVisibility(View.GONE);
-		lay7a .setVisibility(View.GONE);
-		
-		
-//		ocultaAdulto_1();
-//		ocultaAdulto_2();
+//	
+//	
+//	public void muestraDireccion() {
+//	
+//		lay3 .setVisibility(View.GONE);
+//		lay4 .setVisibility(View.GONE);
+//		lay5 .setVisibility(View.GONE);
+//		lay6 .setVisibility(View.GONE);
+//		lay6a .setVisibility(View.GONE);
+//		lay6b .setVisibility(View.GONE);
+//		lay6c .setVisibility(View.GONE);
+//		lay7 .setVisibility(View.GONE);
+//		lay7a .setVisibility(View.GONE);
 //		
-		
-		
-		lay90.setVisibility(View.VISIBLE); 
-		lay90a.setVisibility(View.VISIBLE); 
-		lay90b.setVisibility(View.VISIBLE); 
-		lay90c.setVisibility(View.VISIBLE); 
-		lay90d.setVisibility(View.VISIBLE); 
-		lay90e.setVisibility(View.VISIBLE); 
-		lay90f.setVisibility(View.VISIBLE); 
-		lay90g.setVisibility(View.VISIBLE); 
-		lay90h.setVisibility(View.VISIBLE); 
-		lay90i.setVisibility(View.VISIBLE); 
-		lay90j.setVisibility(View.VISIBLE); 
-
-
-		
-	}
-	
+//		
+////		ocultaAdulto_1();
+////		ocultaAdulto_2();
+////		
+//		
+//		
+//		lay90.setVisibility(View.VISIBLE); 
+//		lay90a.setVisibility(View.VISIBLE); 
+//		lay90b.setVisibility(View.VISIBLE); 
+//		lay90c.setVisibility(View.VISIBLE); 
+//		lay90d.setVisibility(View.VISIBLE); 
+//		lay90e.setVisibility(View.VISIBLE); 
+//		lay90f.setVisibility(View.VISIBLE); 
+//		lay90g.setVisibility(View.VISIBLE); 
+//		lay90h.setVisibility(View.VISIBLE); 
+//		lay90i.setVisibility(View.VISIBLE); 
+//		lay90j.setVisibility(View.VISIBLE); 
+//
+//
+//		
+//	}
+//	
 
 	
 	public void ocultaDireccion() {
@@ -5652,6 +6480,16 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 	lay7 .setVisibility(View.GONE);
 	lay7a .setVisibility(View.GONE);
 	
+	
+	rdPregunta3.clearCheck();
+	rdPregunta4 .clearCheck();
+	rdPregunta5 .clearCheck();
+	rdPregunta6 .clearCheck();
+	rdPregunta6a.clearCheck();
+	rdPregunta6b.clearCheck();
+	rdPregunta6c.clearCheck();
+	rdPregunta7 .clearCheck();
+	rdPregunta7a.clearCheck();
 	
 	ocultaAdulto_1();
 	ocultaAdulto_2();
@@ -5724,6 +6562,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 	public void muestraEstadisticas(){
 		layEst.setVisibility(View.VISIBLE);
 		layEdad.setVisibility(View.VISIBLE);
+		layHijos.setVisibility(View.VISIBLE);
 		layAporta.setVisibility(View.VISIBLE);
 		layOcupacion.setVisibility(View.VISIBLE);
 		layTrabajaron.setVisibility(View.VISIBLE);
@@ -5802,20 +6641,28 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		elMaximo = Integer.parseInt(sacaMaximo().toString()) + 1;
 		
 		String strText12_1;
-		if(editPregunta12_1.getText().toString().trim().length()==0){
+		String strText12a_1;
+		if(editPregunta12_1.getText().toString().trim().length()==0 && editPregunta12a_1.getText().toString().trim().length()==0){
 			strText12_1=op12_1;
+			strText12a_1=op12_1;
 		}else{
 			strText12_1=editPregunta12_1.getText().toString().trim();
+			strText12a_1=editPregunta12a_1.getText().toString().trim();
 			rdPregunta12_1.clearCheck();
 		}
 		
 		String strText12_2;
-		if(editPregunta12_2.getText().toString().trim().length()==0){
+		String strText12a_2;
+		if(editPregunta12_2.getText().toString().trim().length()==0 && editPregunta12a_2.getText().toString().trim().length()==0){
 			strText12_2=op12_2;
+			strText12a_2=op12_2;
 		}else{
 			strText12_2=editPregunta12_2.getText().toString().trim();
+			strText12a_2=editPregunta12a_2.getText().toString().trim();
 			rdPregunta12_2.clearCheck();
 		}
+		
+	
 		
 		
 		String strText16_1;
@@ -5971,6 +6818,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		String str10c_1 = op10c_1;
 		String str11_1 = op11_1;
 		String str12_1 = strText12_1;
+		String str12a_1 = strText12a_1;
 		String str13_1 = op13_1;
 		String str13a_1 = op13a_1;
 		String str13b_1 = op13b_1;
@@ -5986,6 +6834,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		String str10c_2 = op10c_2;
 		String str11_2 = op11_2;
 		String str12_2 = strText12_2;
+		String str12a_2 = strText12a_2;
 		String str13_2 = op13_2;
 		String str13a_2 = op13a_2;
 		String str13b_2 = op13b_2;
@@ -6314,6 +7163,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				values.put("pregunta_10c_1",str10c_1);
 				values.put("pregunta_11_1",str11_1);
 				values.put("pregunta_12_1",str12_1);
+				values.put("pregunta_12a_1",str12a_1);
 				values.put("pregunta_13_1",str13_1);
 				values.put("pregunta_13a_1",str13a_1);
 				values.put("pregunta_13b_1",str13b_1);
@@ -6329,6 +7179,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				values.put("pregunta_10c_2",str10c_2);
 				values.put("pregunta_11_2",str11_2);
 				values.put("pregunta_12_2",str12_2);
+				values.put("pregunta_12a_2",str12a_2);
 				values.put("pregunta_13_2",str13_2);
 				values.put("pregunta_13a_2",str13a_2);
 				values.put("pregunta_13b_2",str13b_2);
@@ -6438,6 +7289,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 			System.out.println("pregunta_10c_1  " +   str10c_1);
 			System.out.println("pregunta_11_1  " +   str11_1);
 			System.out.println("pregunta_12_1  " +   str12_1);
+			System.out.println("pregunta_12a_1  " +   str12a_1);
 			System.out.println("pregunta_13_1  " +   str13_1);
 			System.out.println("pregunta_13a_1  " +   str13a_1);
 			System.out.println("pregunta_13b_1  " +   str13b_1);
@@ -6445,21 +7297,22 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 			System.out.println("pregunta_14_1  " +   str14_1);
 			System.out.println("pregunta_14a_1  " +   str14a_1);
 			System.out.println("pregunta_14b_1  " +   str14b_1);
-//			System.out.println("pregunta_8_2  " +   str8_2);
-//			System.out.println("pregunta_9_2  " +   str9_2);
-//			System.out.println("pregunta_10_2  " +   str10_2);
-//			System.out.println("pregunta_10a_2  " +   str10a_2);
-//			System.out.println("pregunta_10b_2  " +   str10b_2);
-//			System.out.println("pregunta_10c_2  " +   str10c_2);
-//			System.out.println("pregunta_11_2  " +   str11_2);
-//			System.out.println("pregunta_12_2  " +   str12_2);
-//			System.out.println("pregunta_13_2  " +   str13_2);
-//			System.out.println("pregunta_13a_2  " +   str13a_2);
-//			System.out.println("pregunta_13b_2  " +   str13b_2);
-//			System.out.println("pregunta_13c_2  " +   str13c_2);
-//			System.out.println("pregunta_14_2  " +   str14_2);
-//			System.out.println("pregunta_14a_2  " +   str14a_2);
-//			System.out.println("pregunta_14b_2  " +   str14b_2);
+			System.out.println("pregunta_8_2  " +   str8_2);
+			System.out.println("pregunta_9_2  " +   str9_2);
+			System.out.println("pregunta_10_2  " +   str10_2);
+			System.out.println("pregunta_10a_2  " +   str10a_2);
+			System.out.println("pregunta_10b_2  " +   str10b_2);
+			System.out.println("pregunta_10c_2  " +   str10c_2);
+			System.out.println("pregunta_11_2  " +   str11_2);
+			System.out.println("pregunta_12_2  " +   str12_2);
+			System.out.println("pregunta_12a_2  " +   str12a_2);
+			System.out.println("pregunta_13_2  " +   str13_2);
+			System.out.println("pregunta_13a_2  " +   str13a_2);
+			System.out.println("pregunta_13b_2  " +   str13b_2);
+			System.out.println("pregunta_13c_2  " +   str13c_2);
+			System.out.println("pregunta_14_2  " +   str14_2);
+			System.out.println("pregunta_14a_2  " +   str14a_2);
+			System.out.println("pregunta_14b_2  " +   str14b_2);
 			System.out.println("pregunta_15  " +   str15);
 			System.out.println("pregunta_15a  " +   str15a);
 			System.out.println("pregunta_16_1  " +   str16_1);
@@ -6474,18 +7327,18 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 			System.out.println("pregunta_22_1  " +   str22_1);
 			System.out.println("pregunta_22a_1  " +   str22a_1);
 			System.out.println("pregunta_23_1  " +   str23_1);
-//			System.out.println("pregunta_16_2  " +   str16_2);
-//			System.out.println("pregunta_17_2  " +   str17_2);
-//			System.out.println("pregunta_17a_2  " +   str17a_2);
-//			System.out.println("pregunta_17b_2  " +   str17b_2);
-//			System.out.println("pregunta_17c_2  " +   str17c_2);
-//			System.out.println("pregunta_18_2  " +   str18_2);
-//			System.out.println("pregunta_19_2  " +   str19_2);
-//			System.out.println("pregunta_20_2  " +   str20_2);
-//			System.out.println("pregunta_21_2  " +   str21_2);
-//			System.out.println("pregunta_22_2  " +   str22_2);
-//			System.out.println("pregunta_22a_2  " +   str22a_2);
-//			System.out.println("pregunta_23_2  " +   str23_2);
+			System.out.println("pregunta_16_2  " +   str16_2);
+			System.out.println("pregunta_17_2  " +   str17_2);
+			System.out.println("pregunta_17a_2  " +   str17a_2);
+			System.out.println("pregunta_17b_2  " +   str17b_2);
+			System.out.println("pregunta_17c_2  " +   str17c_2);
+			System.out.println("pregunta_18_2  " +   str18_2);
+			System.out.println("pregunta_19_2  " +   str19_2);
+			System.out.println("pregunta_20_2  " +   str20_2);
+			System.out.println("pregunta_21_2  " +   str21_2);
+			System.out.println("pregunta_22_2  " +   str22_2);
+			System.out.println("pregunta_22a_2  " +   str22a_2);
+			System.out.println("pregunta_23_2  " +   str23_2);
 			System.out.println("pregunta_90  " +   str90);
 			System.out.println("pregunta_90a  " +   str90a);
 			System.out.println("pregunta_90b  " +   str90b);
@@ -6571,74 +7424,102 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 			
 
 			 
-			  if (lay1.getVisibility() == 0 && op1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  "Acceso",Toast.LENGTH_LONG).show();}
-//			  else if (lay2.getVisibility() == 0 && op2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura2,Toast.LENGTH_LONG).show();}
-//			  else if (lay3.getVisibility() == 0 && op3.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura3,Toast.LENGTH_LONG).show();}
-//			  else if (lay4.getVisibility() == 0 && op4.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura4,Toast.LENGTH_LONG).show();}
-//			  else if (lay5.getVisibility() == 0 && op5.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura5,Toast.LENGTH_LONG).show();}
-//			  else if (lay6.getVisibility() == 0 && op6.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura6,Toast.LENGTH_LONG).show();}
-//			  else if (lay7.getVisibility() == 0 && op7.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura7,Toast.LENGTH_LONG).show();}
-//			  else if (lay7a.getVisibility() == 0 && op7a.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura7a,Toast.LENGTH_LONG).show();}
-//			  else if (lay8_1.getVisibility() == 0 && op8_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura8_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay9_1.getVisibility() == 0 && op9_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura9_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay10_1.getVisibility() == 0 && op10_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay10a_1.getVisibility() == 0 && op10a_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10a_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay10b_1.getVisibility() == 0 && op10b_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10b_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay10c_1.getVisibility() == 0 && op10c_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10c_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay11_1.getVisibility() == 0 && op11_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura11_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay12_1.getVisibility() == 0 && op12_1.matches("sin datos") && editPregunta12_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura12_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay13_1.getVisibility() == 0 && op13_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay13a_1.getVisibility() == 0 && op13a_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13a_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay13b_1.getVisibility() == 0 && op13b_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13b_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay13c_1.getVisibility() == 0 && op13c_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13c_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay14_1.getVisibility() == 0 && op14_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura14_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay14a_1.getVisibility() == 0 && op14a_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura14a_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay14b_1.getVisibility() == 0 && op14b_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura14b_1,Toast.LENGTH_LONG).show();}
-//			 
-//			  else if (lay15.getVisibility() == 0 && op15.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura15,Toast.LENGTH_LONG).show();}
-//			  else if (lay15a.getVisibility() == 0 && op15a.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura15a,Toast.LENGTH_LONG).show();}
-//			  
-//			  else if (lay16_1.getVisibility() == 0 && op16_1.matches("sin datos") && editPregunta16_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura16_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay17_1.getVisibility() == 0 && op17_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay17a_1.getVisibility() == 0 && op17a_1.matches("sin datos")&& spinner17a_1.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17a_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay17b_1.getVisibility() == 0 && op17b_1.matches("sin datos")&& spinner17b_1.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17b_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay17c_1.getVisibility() == 0 && op17c_1.matches("sin datos")&& spinner17c_1.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17c_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay18_1.getVisibility() == 0 && op18_1.matches("sin datos") && editPregunta18_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura18_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay19_1.getVisibility() == 0 && op19_1.matches("sin datos") && editPregunta19_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura19_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay20_1.getVisibility() == 0 && op20_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura20_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay21_1.getVisibility() == 0 && op21_1.matches("sin datos") && editPregunta21_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura21_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay22_1.getVisibility() == 0 && op22_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura22_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay22a_1.getVisibility() == 0 && op22a_1.matches("sin datos") && editPregunta22a_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura22a_1,Toast.LENGTH_LONG).show();}
-//			  else if (lay23_1.getVisibility() == 0 && op23_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura23_1,Toast.LENGTH_LONG).show();}
-//			 
-//
-//			else if (layEdad.getVisibility() == 0 && opEdad.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaEdad, Toast.LENGTH_LONG).show();} 
-//			else if (layAporta.getVisibility() == 0 && opAporta.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaAporta, Toast.LENGTH_LONG).show();} 
-//			else if (layOcupacion.getVisibility() == 0 && opOcupacion.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaOcupacion, Toast.LENGTH_LONG).show();} 
-//			else if (layTrabajaron.getVisibility() == 0 && opTrabajaron.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaTrabajaron, Toast.LENGTH_LONG).show();} 
-//			else if (layCoche.getVisibility() == 0 && opCoche.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaCoche, Toast.LENGTH_LONG).show();} 
-//			else if (layCuantosCoches.getVisibility() == 0 && opCuantosCoches.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaCuantosCoches, Toast.LENGTH_LONG).show();} 
-//			else if (layCuartos.getVisibility() == 0 && opCuartos.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaCuartos, Toast.LENGTH_LONG).show();} 
-//			else if (layCuartosDormir.getVisibility() == 0 && opCuartosDormir.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaCuartosDormir, Toast.LENGTH_LONG).show();} 
-//			else if (layFocos.getVisibility() == 0 && opFocos.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaFocos, Toast.LENGTH_LONG).show();}
-//			else if (layBanos.getVisibility() == 0 && opBanos.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaBanos, Toast.LENGTH_LONG).show();} 
-//			else if (layRegadera.getVisibility() == 0 && opRegadera.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaBanos, Toast.LENGTH_LONG).show();} 
-//			else if (layInternet.getVisibility() == 0 && opInternet.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaInternet, Toast.LENGTH_LONG).show();} 
-//			else if (layEstufa.getVisibility() == 0 && opEstufa.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaEstufa, Toast.LENGTH_LONG).show();} 
-//			else if (layTipoPiso.getVisibility() == 0 && opTipoPiso.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaTipoPiso, Toast.LENGTH_LONG).show();}
-//			else if (layTipoVivienda.getVisibility() == 0 && opTipoVivienda.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaTipoVivienda, Toast.LENGTH_LONG).show();} 
-//			else if (layGenero.getVisibility() == 0 && opGenero.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaGenero, Toast.LENGTH_LONG).show();} 
-//			
-//			 else if (lay90a.getVisibility()==0 && editPregunta90a.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90a,Toast.LENGTH_LONG).show();}
-//			  else if (lay90c.getVisibility() == 0 && editPregunta90b.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90c,Toast.LENGTH_LONG).show();}
-//			  else if (lay90b.getVisibility() == 0 && editPregunta90c.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90b,Toast.LENGTH_LONG).show();}
-//			  else if (lay90d.getVisibility() == 0 && editPregunta90d.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90d,Toast.LENGTH_LONG).show();}
-//			  else if (lay90e.getVisibility() == 0 && editPregunta90e.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90e,Toast.LENGTH_LONG).show();}
-//			  else if (lay90f.getVisibility() == 0 && editPregunta90f.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90f,Toast.LENGTH_LONG).show();}
-//			  else if (lay90g.getVisibility() == 0 && editPregunta90g.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90g,Toast.LENGTH_LONG).show();}
-//			  else if (lay90h.getVisibility() == 0 && editPregunta90h.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90h,Toast.LENGTH_LONG).show();}
-//			  else if (lay90i.getVisibility() == 0 && spinner90i.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90i,Toast.LENGTH_LONG).show();}
-//			  else if (lay90j.getVisibility() == 0 && editPregunta90j.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90j,Toast.LENGTH_LONG).show();}
+			  if (lay1.getVisibility() == 0 && op1.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  "Acceso",Toast.LENGTH_LONG).show();}
+			  else if (lay2.getVisibility() == 0 && op2.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura2,Toast.LENGTH_LONG).show();}
+			  else if (lay3.getVisibility() == 0 && op3.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura3,Toast.LENGTH_LONG).show();}
+			  else if (lay4.getVisibility() == 0 && op4.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura4,Toast.LENGTH_LONG).show();}
+			  else if (lay5.getVisibility() == 0 && op5.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura5,Toast.LENGTH_LONG).show();}
+			  else if (lay6a.getVisibility() == 0 && op6a.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura6a,Toast.LENGTH_LONG).show();}
+			  else if (lay6b.getVisibility() == 0 && op6b.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura6b,Toast.LENGTH_LONG).show();}
+			  else if (lay6c.getVisibility() == 0 && op6c.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura6c,Toast.LENGTH_LONG).show();}
+			  else if (lay7.getVisibility() == 0 && op7.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura7,Toast.LENGTH_LONG).show();}
+			  else if (lay7a.getVisibility() == 0 && op7a.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura7a,Toast.LENGTH_LONG).show();}
+			  
+			  else if (lay8_1.getVisibility() == 0 && op8_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura8_1,Toast.LENGTH_LONG).show();}
+			  else if (lay9_1.getVisibility() == 0 && op9_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura9_1,Toast.LENGTH_LONG).show();}
+			  else if (lay10_1.getVisibility() == 0 && op10_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10_1,Toast.LENGTH_LONG).show();}
+			  else if (lay10a_1.getVisibility() == 0 && op10a_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10a_1,Toast.LENGTH_LONG).show();}
+			  else if (lay10b_1.getVisibility() == 0 && op10b_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10b_1,Toast.LENGTH_LONG).show();}
+			  else if (lay10c_1.getVisibility() == 0 && op10c_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10c_1,Toast.LENGTH_LONG).show();}
+			  else if (lay11_1.getVisibility() == 0 && op11_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura11_1,Toast.LENGTH_LONG).show();}
+			  else if (lay12_1.getVisibility() == 0 && op12_1.matches("sin datos") && editPregunta12_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura12_1,Toast.LENGTH_LONG).show();}
+			  else if (lay13a_1.getVisibility() == 0 && op13a_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13a_1,Toast.LENGTH_LONG).show();}
+			  else if (lay13b_1.getVisibility() == 0 && op13b_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13b_1,Toast.LENGTH_LONG).show();}
+			  else if (lay13c_1.getVisibility() == 0 && op13c_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13c_1,Toast.LENGTH_LONG).show();}
+			  else if (lay14a_1.getVisibility() == 0 && op14a_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura14a_1,Toast.LENGTH_LONG).show();}
+			  else if (lay14b_1.getVisibility() == 0 && op14b_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura14b_1,Toast.LENGTH_LONG).show();}
+			 
+			  
+			  else if (lay8_2.getVisibility() == 0 && op8_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura8_2,Toast.LENGTH_LONG).show();}
+			  else if (lay9_2.getVisibility() == 0 && op9_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura9_2,Toast.LENGTH_LONG).show();}
+			  else if (lay10_2.getVisibility() == 0 && op10_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10_2,Toast.LENGTH_LONG).show();}
+			  else if (lay10a_2.getVisibility() == 0 && op10a_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10a_2,Toast.LENGTH_LONG).show();}
+			  else if (lay10b_2.getVisibility() == 0 && op10b_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10b_2,Toast.LENGTH_LONG).show();}
+			  else if (lay10c_2.getVisibility() == 0 && op10c_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura10c_2,Toast.LENGTH_LONG).show();}
+			  else if (lay11_2.getVisibility() == 0 && op11_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura11_2,Toast.LENGTH_LONG).show();}
+			  else if (lay12_2.getVisibility() == 0 && op12_2.matches("sin datos") && editPregunta12_2.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura12_2,Toast.LENGTH_LONG).show();}
+			  else if (lay13a_2.getVisibility() == 0 && op13a_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13a_2,Toast.LENGTH_LONG).show();}
+			  else if (lay13b_2.getVisibility() == 0 && op13b_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13b_2,Toast.LENGTH_LONG).show();}
+			  else if (lay13c_2.getVisibility() == 0 && op13c_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura13c_2,Toast.LENGTH_LONG).show();}
+			  else if (lay14a_2.getVisibility() == 0 && op14a_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura14a_2,Toast.LENGTH_LONG).show();}
+			  else if (lay14b_2.getVisibility() == 0 && op14b_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura14b_2,Toast.LENGTH_LONG).show();}
+			 
+			  
+			  else if (lay15.getVisibility() == 0 && op15.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura15,Toast.LENGTH_LONG).show();}
+			  else if (lay15a.getVisibility() == 0 && op15a.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura15a,Toast.LENGTH_LONG).show();}
+			  
+			  else if (lay16_1.getVisibility() == 0 && op16_1.matches("sin datos") && editPregunta16_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura16_1,Toast.LENGTH_LONG).show();}
+			  else if (lay17a_1.getVisibility() == 0 && op17a_1.matches("sin datos")&& spinner17a_1.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17a_1,Toast.LENGTH_LONG).show();}
+			  else if (lay17b_1.getVisibility() == 0 && op17b_1.matches("sin datos")&& spinner17b_1.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17b_1,Toast.LENGTH_LONG).show();}
+			  else if (lay17c_1.getVisibility() == 0 && op17c_1.matches("sin datos")&& spinner17c_1.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17c_1,Toast.LENGTH_LONG).show();}
+			  else if (lay18_1.getVisibility() == 0 && op18_1.matches("sin datos") && editPregunta18_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura18_1,Toast.LENGTH_LONG).show();}
+			  else if (lay19_1.getVisibility() == 0 && op19_1.matches("sin datos") && editPregunta19_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura19_1,Toast.LENGTH_LONG).show();}
+			  else if (lay20_1.getVisibility() == 0 && op20_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura20_1,Toast.LENGTH_LONG).show();}
+			  else if (lay21_1.getVisibility() == 0 && op21_1.matches("sin datos") && editPregunta21_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura21_1,Toast.LENGTH_LONG).show();}
+			  else if (lay22_1.getVisibility() == 0 && op22_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura22_1,Toast.LENGTH_LONG).show();}
+			  else if (lay22a_1.getVisibility() == 0 && op22a_1.matches("sin datos") && editPregunta22a_1.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura22a_1,Toast.LENGTH_LONG).show();}
+			  else if (lay23_1.getVisibility() == 0 && op23_1.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura23_1,Toast.LENGTH_LONG).show();}
+			  
+			  else if (lay16_2.getVisibility() == 0 && op16_2.matches("sin datos") && editPregunta16_2.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura16_2,Toast.LENGTH_LONG).show();}
+			  else if (lay17a_2.getVisibility() == 0 && op17a_2.matches("sin datos")&& spinner17a_2.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17a_2,Toast.LENGTH_LONG).show();}
+			  else if (lay17b_2.getVisibility() == 0 && op17b_2.matches("sin datos")&& spinner17b_2.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17b_2,Toast.LENGTH_LONG).show();}
+			  else if (lay17c_2.getVisibility() == 0 && op17c_2.matches("sin datos")&& spinner17c_2.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura17c_2,Toast.LENGTH_LONG).show();}
+			  else if (lay18_2.getVisibility() == 0 && op18_2.matches("sin datos") && editPregunta18_2.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura18_2,Toast.LENGTH_LONG).show();}
+			  else if (lay19_2.getVisibility() == 0 && op19_2.matches("sin datos") && editPregunta19_2.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura19_2,Toast.LENGTH_LONG).show();}
+			  else if (lay20_2.getVisibility() == 0 && op20_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura20_2,Toast.LENGTH_LONG).show();}
+			  else if (lay21_2.getVisibility() == 0 && op21_2.matches("sin datos") && editPregunta21_2.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura21_2,Toast.LENGTH_LONG).show();}
+			  else if (lay22_2.getVisibility() == 0 && op22_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura22_2,Toast.LENGTH_LONG).show();}
+			  else if (lay22a_2.getVisibility() == 0 && op22a_2.matches("sin datos") && editPregunta22a_2.getText().toString().trim().length() == 0 ){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura22a_2,Toast.LENGTH_LONG).show();}
+			  else if (lay23_2.getVisibility() == 0 && op23_2.matches("sin datos")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura23_2,Toast.LENGTH_LONG).show();}
+			 
+
+			else if (layEdad.getVisibility() == 0 && opEdad.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaEdad, Toast.LENGTH_LONG).show();} 
+			else if (layAporta.getVisibility() == 0 && opAporta.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaAporta, Toast.LENGTH_LONG).show();} 
+			else if (layOcupacion.getVisibility() == 0 && opOcupacion.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaOcupacion, Toast.LENGTH_LONG).show();} 
+			else if (layTrabajaron.getVisibility() == 0 && opTrabajaron.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaTrabajaron, Toast.LENGTH_LONG).show();} 
+			else if (layCoche.getVisibility() == 0 && opCoche.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaCoche, Toast.LENGTH_LONG).show();} 
+			else if (layCuantosCoches.getVisibility() == 0 && opCuantosCoches.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaCuantosCoches, Toast.LENGTH_LONG).show();} 
+			else if (layCuartos.getVisibility() == 0 && opCuartos.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaCuartos, Toast.LENGTH_LONG).show();} 
+			else if (layCuartosDormir.getVisibility() == 0 && opCuartosDormir.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaCuartosDormir, Toast.LENGTH_LONG).show();} 
+			else if (layFocos.getVisibility() == 0 && opFocos.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaFocos, Toast.LENGTH_LONG).show();}
+			else if (layBanos.getVisibility() == 0 && opBanos.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaBanos, Toast.LENGTH_LONG).show();} 
+			else if (layRegadera.getVisibility() == 0 && opRegadera.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaBanos, Toast.LENGTH_LONG).show();} 
+			else if (layInternet.getVisibility() == 0 && opInternet.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaInternet, Toast.LENGTH_LONG).show();} 
+			else if (layEstufa.getVisibility() == 0 && opEstufa.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaEstufa, Toast.LENGTH_LONG).show();} 
+			else if (layTipoPiso.getVisibility() == 0 && opTipoPiso.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaTipoPiso, Toast.LENGTH_LONG).show();}
+			else if (layTipoVivienda.getVisibility() == 0 && opTipoVivienda.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaTipoVivienda, Toast.LENGTH_LONG).show();} 
+			else if (layGenero.getVisibility() == 0 && opGenero.matches("sin datos")) {Toast.makeText(getBaseContext(), "CAPTURA:  " + capturaGenero, Toast.LENGTH_LONG).show();} 
+			
+			 else if (lay90a.getVisibility()==0 && editPregunta90a.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90a,Toast.LENGTH_LONG).show();}
+			  else if (lay90c.getVisibility() == 0 && editPregunta90b.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90c,Toast.LENGTH_LONG).show();}
+			  else if (lay90b.getVisibility() == 0 && editPregunta90c.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90b,Toast.LENGTH_LONG).show();}
+			  else if (lay90d.getVisibility() == 0 && editPregunta90d.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90d,Toast.LENGTH_LONG).show();}
+			  else if (lay90e.getVisibility() == 0 && editPregunta90e.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90e,Toast.LENGTH_LONG).show();}
+			  else if (lay90f.getVisibility() == 0 && editPregunta90f.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90f,Toast.LENGTH_LONG).show();}
+			  else if (lay90g.getVisibility() == 0 && editPregunta90g.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90g,Toast.LENGTH_LONG).show();}
+			  else if (lay90h.getVisibility() == 0 && editPregunta90h.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90h,Toast.LENGTH_LONG).show();}
+			  else if (lay90i.getVisibility() == 0 && spinner90i.getSelectedItem().toString().equals("Selecciona")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90i,Toast.LENGTH_LONG).show();}
+			  else if (lay90j.getVisibility() == 0 && editPregunta90j.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90j,Toast.LENGTH_LONG).show();}
 
 			else {
 
@@ -6661,8 +7542,8 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 
 		case 2:
 		
-
-			 if (lay90a.getVisibility()==0 && editPregunta90a.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90a,Toast.LENGTH_LONG).show();}
+			 if (lay2.getVisibility() == 0 && op2.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura2,Toast.LENGTH_LONG).show();}
+			 else if (lay90a.getVisibility()==0 && editPregunta90a.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90a,Toast.LENGTH_LONG).show();}
 			  else if (lay90c.getVisibility() == 0 && editPregunta90b.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90c,Toast.LENGTH_LONG).show();}
 			  else if (lay90b.getVisibility() == 0 && editPregunta90c.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90b,Toast.LENGTH_LONG).show();}
 			  else if (lay90d.getVisibility() == 0 && editPregunta90d.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90d,Toast.LENGTH_LONG).show();}
@@ -6676,15 +7557,16 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 				  
 				valores();
 				btnGuardar.setEnabled(false);
-				dialogo();
+				dialogoFoto();
 			  }
 
 			break;
 
 		case 3:
 
-			
-			 if (lay90a.getVisibility()==0 && editPregunta90a.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90a,Toast.LENGTH_LONG).show();}
+
+			 if (lay2.getVisibility() == 0 && op2.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura2,Toast.LENGTH_LONG).show();}
+			 else if (lay90a.getVisibility()==0 && editPregunta90a.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90a,Toast.LENGTH_LONG).show();}
 			  else if (lay90c.getVisibility() == 0 && editPregunta90b.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90c,Toast.LENGTH_LONG).show();}
 			  else if (lay90b.getVisibility() == 0 && editPregunta90c.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90b,Toast.LENGTH_LONG).show();}
 			  else if (lay90d.getVisibility() == 0 && editPregunta90d.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90d,Toast.LENGTH_LONG).show();}
@@ -6699,7 +7581,7 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 			  else{  
 				valores();
 				btnGuardar.setEnabled(false);
-				dialogo();
+				dialogoFoto();
 			  }
 
 			break;
@@ -7200,10 +8082,8 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		if (var == null) {
 			var = "";
 		}
-		final String[] datos = new String[] { "" + var + "", "ÁLVARO OBREGÓN", "AZCAPOTZALCO", "BENITO JUÁREZ",
-				"COYOACÁN", "CUAJIMALPA DE MORELOS", "CUAUHTÉMOC", "GUSTAVO A. MADERO", "IZTACALCO", "IZTAPALAPA",
-				"LA MAGDALENA CONTRERAS", "MIGUEL HIDALGO", "MILPA ALTA", "TLÁHUAC", "TLALPAN", "VENUSTIANO CARRANZA",
-				"XOCHIMILCO", "No sabe / No contestó" };
+		final String[] datos = new String[] { "" + var + "", "ÁLVARO OBREGÓN",
+				"CUAJIMALPA DE MORELOS", "LA MAGDALENA CONTRERAS",  "MILPA ALTA", "TLÁHUAC", "TLALPAN", "XOCHIMILCO" };
 		ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, datos);
 		adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner90i.setAdapter(adaptador);

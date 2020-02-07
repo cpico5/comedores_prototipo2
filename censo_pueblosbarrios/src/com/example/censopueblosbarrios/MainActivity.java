@@ -1523,8 +1523,8 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 			final String date2 = formattedDateFecha;
 			 File sdCard;
 				sdCard = Environment.getExternalStorageDirectory();
-				final String pathFotos = sdCard.getAbsolutePath() +"/Fotos/FotosCensoPueblos"+date2+"N";
-				final String pathFotosN = sdCard.getAbsolutePath() +"/Fotos/FotosCensoPuelos"+date2+"N/";
+				final String pathFotos = sdCard.getAbsolutePath() +"/Fotos/FotosCensoPueblos"+date2+"N/";
+				final String pathFotosN = sdCard.getAbsolutePath() +"/Fotos/FotosCensoPueblos"+date2+"N/";
 				final String pathFotosF = sdCard.getAbsolutePath() +"/Fotos/FotosCensoPueblos"+date2+ "/";;
 	        
 		        String sDirectorio = pathFotos;
@@ -1532,7 +1532,9 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 				Log.i(null,"lista"+pathFotos);
 				final String customURL = "https://opinion.cdmx.gob.mx/fotografias/censo_pueblos/";
 
-			Log.i("Foto", "CarlosQ =======> Path lista de fotos: " + pathFotos);
+			Log.i("Foto", "CarlosQ =======> Path lista de fotos Main: " + pathFotos);
+			Log.i("Foto", "CarlosQ =======> Path lista de fotosN Main: " + pathFotosN);
+			Log.i("Foto", "CarlosQ =======> Path lista de fotosF Main: " + pathFotosF);
 
 			File F = new File(pathFotos);
 
@@ -1555,7 +1557,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 					String[] s = new String[ficheros.length];
 					String[] t = new String[ficheros.length];
 					for (int x = 0; x < ficheros.length; x++) {
-						Log.i("Foto", "CarlosQ ===========> lista de fotos: " + ficheros[x].getName());
+						Log.i("Foto", "CarlosQ ===========> lista de fotos Main: " + ficheros[x].getName());
 						s[x] = pathFotos + "/" + ficheros[x].getName();
 						t[x] = ficheros[x].getName();
 						// solo la foto
@@ -1567,13 +1569,13 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
  						huc.setRequestMethod ("GET");  //OR  huc.setRequestMethod ("HEAD"); 
  						huc.connect () ; 
  						huc.getResponseCode();
- 						Log.i("Foto", "CarlosQ: =====================> Respuesta del servidor " + huc.getResponseCode());
+ 						Log.i("Foto", "CarlosQ: =====================> Respuesta del servidor Main " + huc.getResponseCode());
  						if(huc.getResponseCode()==200){
  							moveFile(pathFotosN, t[x], pathFotosF);
- 							Log.i("Foto", "CarlosQ: ================>  Foto en el servidor y Movido a otra carpeta ====>" + t[x] );
+ 							Log.i("Foto", "CarlosQ: ================>  Foto en el servidor y Movido a otra carpeta main ====>" + t[x] );
  						}else if(huc.getResponseCode()==404){
  							uploadFotos(s[x],date2);
- 							Log.i("Foto", "CarlosQ: =================> Foto Enviada al servidor y está Sin Moverse ====>" + t[x] );
+ 							Log.i("Foto", "CarlosQ: =================> Foto Enviada al servidor y está Sin Moverse main ====>" + t[x] );
  						}
 					}
 					// first parameter is d files second parameter is zip file name

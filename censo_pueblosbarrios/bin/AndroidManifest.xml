@@ -77,6 +77,12 @@
             </intent-filter>
         </activity>
 
+         <activity 
+            android:name="com.example.censopueblosbarrios.CalendarViewFotos"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
         
         <activity 
             android:name="com.example.censopueblosbarrios.MainActivityConteo"

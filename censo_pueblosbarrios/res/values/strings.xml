@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">CensoPueblosyBarrios_v5</string>
+    <string name="app_name">CensoPueblosyBarrios_v13</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     
@@ -73,7 +73,7 @@
     
 
 
-<string name="PREGUNTA1">1  Acceso</string>
+  <string name="PREGUNTA1">1  Acceso</string>
   <string name="PREGUNTA2">2  Cuestionario</string>
   <string name="PREGUNTA3">3  ¿Cómo se entera Usted de las noticias regularmente?</string>
   <string name="PREGUNTA4">4  Sólo como información, NO le voy a solicitar datos o sus cuentas ¿Usted tiene cuenta personal en Facebook?</string>
@@ -87,12 +87,12 @@
   
   <string name="PREGUNTA8_1">8_1  ¿Podría hablar con él/ella?</string>
   <string name="PREGUNTA9_1">9_1  Si es usted mayor de edad ¿podría ayudarme con algunas preguntas?</string>
-  <string name="PREGUNTA10_1">10_1  ¿Es beneficiario(a) del programa de Pensión Alimentaria para Personas Adultas Mayores? (EL ADULTO MAYOR)</string>
+  <string name="PREGUNTA10_1">10_1  ¿Es beneficiario(a) del programa de Pensión para el Bienestar de las Personas Adultas Mayores? (EL ADULTO MAYOR)</string>
   <string name="PREGUNTA10a_1">10a_1  ¿Cuándo fue la última vez que recibió depósito en su tarjeta de Bienestar?</string>
-  <string name="PREGUNTA10b_1">10b_1  ¿En los últimos seis meses (agosto 2019 a febrero 2020) ha tenido algún problema con los depósitos de su pensión)</string>
+  <string name="PREGUNTA10b_1">10b_1  ¿En los últimos seis meses (agosto 2019 a febrero 2020) ha tenido algún problema con los depósitos de su pensión?)</string>
   <string name="PREGUNTA10c_1">10c_1  Actualmente ¿ya está regularizado su pago bimestral?</string>
   <string name="PREGUNTA11_1">11_1  Género (EL ADULTO MAYOR)</string>
-  <string name="PREGUNTA12_1">12_1  Me podría proporcionar su edad (EL ADULTO MAYOR) (anotar edad con años)</string>
+  <string name="PREGUNTA12_1">12_1  Me podría proporcionar su edad (EL ADULTO MAYOR) (anotar edad con años y meses)</string>
   <string name="PREGUNTA12a_1">12a_1  años</string>
   <string name="PREGUNTA12b_1">12b_1  meses</string>
   <string name="PREGUNTA13_1">13_1  ¿Habla o  entiende alguna lengua indígena o se considera indígena? (EL ADULTO MAYOR) (RESPUESTA MÚLTIPLE)</string>
@@ -105,9 +105,9 @@
   
   <string name="PREGUNTA8_2">8_2  ¿Podría hablar con él/ella?</string>
   <string name="PREGUNTA9_2">9_2  Si es usted mayor de edad ¿podría ayudarme con algunas preguntas?</string>
-  <string name="PREGUNTA10_2">10_2  ¿Es beneficiario(a) del programa de Pensión Alimentaria para Personas Adultas Mayores? (EL ADULTO MAYOR)</string>
+  <string name="PREGUNTA10_2">10_2  ¿Es beneficiario(a) del programa de Pensión para el Bienestar de las Personas Adultas Mayores? (EL ADULTO MAYOR)</string>
   <string name="PREGUNTA10a_2">10a_2  ¿Cuándo fue la última vez que recibió depósito en su tarjeta de Bienestar?</string>
-  <string name="PREGUNTA10b_2">10b_2  ¿En los últimos seis meses (agosto 2019 a febrero 2020) ha tenido algún problema con los depósitos de su pensión)</string>
+  <string name="PREGUNTA10b_2">10b_2  ¿En los últimos seis meses (agosto 2019 a febrero 2020) ha tenido algún problema con los depósitos de su pensión?)</string>
   <string name="PREGUNTA10c_2">10c_2  Actualmente ¿ya está regularizado su pago bimestral?</string>
   <string name="PREGUNTA11_2">11_2  Género (EL ADULTO MAYOR)</string>
   <string name="PREGUNTA12_2">12_2  Me podría proporcionar su edad (EL ADULTO MAYOR) (anotar edad con años y meses)</string>

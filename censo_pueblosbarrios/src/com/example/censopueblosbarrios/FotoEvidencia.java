@@ -18,7 +18,6 @@ import java.util.List;
 import java.util.Set;
 
 import com.example.censopuelosbarrios.R;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -940,7 +939,7 @@ public class FotoEvidencia extends Activity {
 				 File sdCard;
 					sdCard = Environment.getExternalStorageDirectory();
 					final String pathFotos = sdCard.getAbsolutePath() +"/Fotos/FotosCensoPueblos"+date2+"N";
-					final String pathFotosN = sdCard.getAbsolutePath() +"/Fotos/FotosCensoPuelos"+date2+"N/";
+					final String pathFotosN = sdCard.getAbsolutePath() +"/Fotos/FotosCensoPueblos"+date2+"N/";
 					final String pathFotosF = sdCard.getAbsolutePath() +"/Fotos/FotosCensoPueblos"+date2+ "/";;
 		        
 			        String sDirectorio = pathFotos;
@@ -949,8 +948,9 @@ public class FotoEvidencia extends Activity {
 					final String customURL = "https://opinion.cdmx.gob.mx/fotografias/censo_pueblos/";
 
 				Log.i("Foto", "CarlosQ =======> lista de fotos: " + pathFotos);
-				Log.i("Foto", "CarlosQ =======> lista de fotos: " + pathFotosN);
-				Log.i("Foto", "CarlosQ =======> lista de fotos: " + pathFotosF);
+				Log.i("Foto", "CarlosQ =======> pathFotosN: " + pathFotosN);
+				Log.i("Foto", "CarlosQ =======> pathFotosF: " + pathFotosF);
+				Log.i("Foto", "CarlosQ =======> URL: " + customURL);
 
 				File F = new File(pathFotos);
 
