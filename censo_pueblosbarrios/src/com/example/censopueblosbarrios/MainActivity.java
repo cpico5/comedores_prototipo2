@@ -855,19 +855,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 	private void cargaUsuario() {
 
 		final String[] datos = new String[] {
-				"ALAN",
-				"ARREDONDO",
-				"BERNACHI",
-				"DANIEL",
-				"EDUARDO S",
-				"ENRIQUE",
-				"IRIS",
-				"LUJANO",
-				"OSCAR",
-				"POLANCO",
-				"SANDRA",
-				"SAUL",
-				"TABLA"
+				"UNICO",
 };
 
 		// Alternativa 1: Array java
