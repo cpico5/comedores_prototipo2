@@ -1,0 +1,162 @@
+<?xml version="1.1" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Comedores prototipo_visita2_v1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="zona">zona</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="noSabe">No Sabe</string>
+    
+    <string name="de_acuerdo">De acuerdo</string>
+    <string name="nide_acuerdo">Ni de acuerdo, ni en desacuerdo</string>
+    <string name="en_desacuerdo">En desacuerdo</string>
+    
+     <string name="mejor">Mejor</string>
+    <string name="igual">Igual</string>
+    <string name="peor">Peor</string>
+    
+     <string name="mucha">Mucha</string>
+    <string name="poca">Poca</string>
+    <string name="ninguna">Ninguna</string>
+   
+    
+    <string name="radio">Radio</string>
+    <string name="television">Televisión</string>
+    <string name="periodico">Periódico</string>
+    <string name="internet">Internet</string>
+    <string name="otro">Otro</string>
+    <string name="otraForma">Otra forma</string>
+
+    <string name="MuyBien">Muy bien</string>
+    <string name="Bien">Bien</string>
+    <string name="Regular">Regular</string>
+    <string name="Mal">Mal</string>
+    <string name="MuyMal">Muy mal</string>
+    
+    <string name="Mbueno">Muy bueno</string>
+    <string name="Bueno">Bueno</string>
+    <string name="Malo">Malo</string>
+    <string name="MuyMalo">Muy malo</string>
+    
+    <string name="Muybuena">Muy buena</string>
+    <string name="Buena">Buena</string>
+    <string name="Mala">Mala</string>
+    <string name="MuyMala">Muy mala</string>
+    
+    <string name="MuySeguro">Muy seguro</string>
+    <string name="AlgoSeguro">Algo seguro</string>
+    <string name="AlgoInseguro">Algo inseguro</string>
+    <string name="MuyInseguro">Muy inseguro</string>
+
+    <string name="Muchisimo">Muchísimo</string>
+    <string name="Mucho">Mucho</string>
+    <string name="Poco">Poco</string>
+    <string name="Nada">Nada</string>
+    
+    <string name="MuchoMasCerca">Mucho más cerca</string>
+    <string name="Cerca">Cerca</string>
+    <string name="Lejos">Lejos</string>
+    <string name="MuchoMasLejos">Mucho más lejos</string>
+    
+    <string name="MuchoMasBaratos">Mucho más baratos</string>
+    <string name="Masbaratos">Más baratos</string>
+    <string name="Mascaros">Más Caros</string>
+    <string name="MuchoMasCaros">Mucho más Caros</string>
+    
+    <string name="Mmejores">Mucho mejores</string>
+    <string name="Mejores">Mejores</string>
+    <string name="Peores">Peores</string>
+    <string name="Mpeores">Mucho peores</string>
+    
+
+
+  <string name="PREGUNTA1">Fecha del levantamiento:</string>
+  <string name="PREGUNTA2">Nombre del Plantel:</string>
+  <string name="PREGUNTA3">CCT:</string>
+  <string name="PREGUNTA4">Dirección de plantel:</string>
+  <string name="PREGUNTA5">Colonia:</string>
+  <string name="PREGUNTA6">C.P.:</string>
+  <string name="PREGUNTA7">Alcaldía:</string>
+  <string name="PREGUNTA8">¿Podría hablar con el director del plantel?</string>
+  <string name="PREGUNTA9">Turno:</string>
+  <string name="PREGUNTA10">¿Me podría proporcionar el teléfono del plantel?</string>
+  <string name="PREGUNTA11">¿Me podría proporcionar el Correo electrónico del plantel?</string>
+  <string name="PREGUNTA12">¿Podría decirme cual es la matrícula del plantel?</string>
+  <string name="PREGUNTA13">¿Usted conoce algunos de los siguientes programas?</string>
+  <string name="PREGUNTA13a">Insumos alimentarios del Programa de Escuelas de Tiempo Completo de la AEFCM (Autoridad Educativa Federal de la Ciudad de México)</string>
+  <string name="PREGUNTA13b">Tarjeta de dispersión para alimentos calientes (DIF)</string>
+  <string name="PREGUNTA13c">Alimento Frio (DIF, cereal, fruta, leche)</string>
+  <string name="PREGUNTA13d">Otro (especifique)</string>
+  <string name="PREGUNTA14">¿Su escuela es beneficiaria de algún programa de alimentos escolares?</string>
+  <string name="PREGUNTA14a">¿Quién brinda el servicio de alimentos?</string>
+  <string name="PREGUNTA14b">¿Qué tipo de alimento recibe?</string>
+  <string name="PREGUNTA14c">¿Qué tipo de apoyo recibe?</string>
+  <string name="PREGUNTA15">¿Qué tan interesado estaría en que su escuela fuera beneficiaria de alguno de estos programas de alimentación?</string>
+  <string name="PREGUNTA15a">¿Por qué no le gustaría ser beneficiario de alguno de estos programas?</string>
+  <string name="PREGUNTA16">¿Su escuela cuenta con cocina?</string>
+  <string name="PREGUNTA16a">La cocina que tiene su escuela ¿se construyó especialmente como cocina o se adapto un espacio de la escuela para cocina?</string>
+  <string name="PREGUNTA16b">¿Cuenta con comedor?</string>
+  <string name="PREGUNTA16_1">¿Su cocina cuenta con los siguientes utensilios para brindar el servicio de alimentación caliente a sus alumnas y alumnos…</string>
+  <string name="PREGUNTA16c">Refrigerador</string>
+  <string name="PREGUNTA16d">Estufa</string>
+  <string name="PREGUNTA16e">El estado general del estos es…</string>
+  <string name="PREGUNTA16f">Licuadora</string>
+  <string name="PREGUNTA16g">Batidora</string>
+  <string name="PREGUNTA16h">Sartenes y ollas</string>
+  <string name="PREGUNTA16i">Tablas de picar</string>
+  <string name="PREGUNTA16j">Cuchillos y cucharas de picar</string>
+  <string name="PREGUNTA16k">Jarras</string>
+  <string name="PREGUNTA16l">Vajilla (vasos, platos, tazas y cubiertos)</string>
+  <string name="PREGUNTA16m">Charolas</string>
+  <string name="PREGUNTA16n">El estado general del estos utensilios es…</string>
+  <string name="PREGUNTA16o">¿Estos bienes son de…?</string>
+  <string name="PREGUNTA17">¿Tiene proveedor externo responsable de brindar el servicio de alimentación? </string>
+  <string name="PREGUNTA17a">Al proveedor se le da algún insumo (despensa)</string>
+  <string name="PREGUNTA17b">¿Cuánto pagan los padres/ madres de familia por niño al día?</string>
+  <string name="PREGUNTA18">¿Su escuela cuenta con Coordinador del Servicio de Alimentación?</string>
+  <string name="PREGUNTA19"> ¿Los preparadores de alimentos de su escuela cuentan con el siguiente equipo de higiene y seguridad?</string>
+  <string name="PREGUNTA19a">Cofia o red para el cabello</string>
+  <string name="PREGUNTA19b">Guantes</string>
+  <string name="PREGUNTA19c">Cubreboca</string>
+  <string name="PREGUNTA19d">Mandil</string>
+  <string name="PREGUNTA19e">Zapato antiderrapante</string>
+  <string name="PREGUNTA20">¿Su escuela cuenta con los siguientes materiales impresos?</string>
+  <string name="PREGUNTA21">¿Los alimentos que se prepararan en su escuela retoma algunas o todas las recetas propuestas en estos materiales?</string>
+  <string name="PREGUNTA22"> En esta escuela ¿conocen el Programa de Alimentos Escolares modalidad Caliente que otorga el DIF de la Ciudad de México?</string>
+  <string name="PREGUNTA23">¿Me permite exponérselo?</string>
+  <string name="PREGUNTA24">Los padres de familia de su escuela ¿son participativos?</string>
+  <string name="PREGUNTA25">¿Piensa que les gustaría formar parte del comité de alimentos modalidad caliente?</string>
+  <string name="PREGUNTA26">En este momento me gustaría comentar que el Gobierno de la Ciudad de México está invitando a escuelas como está a participar en el proyecto de COCINAS PROTOTIPO con la autorización de SEP, esto es para implementar el Programa de Alimentos en su modalidad Caliente que opera el DIF de la Ciudad de México. \n\n
+      A continuación le voy a mostrar su diseño y características.\n\n
+      (MOSTRAR COCINA DE ACUERDO A SU MATRÍCULA, POR SISTEMA SE PREGUNTARA LA CORRESPONDIENTE)</string>
+  <string name="PREGUNTA26a">¿Cuenta con algún espacio libre exterior de 8 x 5 m para instalar la cocina?</string>
+  <string name="PREGUNTA26b">¿Cuenta con algún espacio libre exterior de 10 x 5 m para instalar la cocina?</string>
+  <string name="PREGUNTA27">¿La escuela cuenta con agua potable?</string>
+  <string name="PREGUNTA27a">Tiene…</string>
+  <string name="PREGUNTA27a1">Cisterna</string>
+  <string name="PREGUNTA27a2">Hidroneumático</string>
+  <string name="PREGUNTA27a3">Tinaco de plástico</string>
+  <string name="PREGUNTA27a4">Tinaco de asbesto</string>
+  <string name="PREGUNTA28">Si la escuela cuenta con agua potable, a cuántos metros aproximadamente se encuentra la toma de agua más cercana del espacio donde se construiría la cocina prototipo.</string>
+  <string name="PREGUNTA29">¿La escuela cuenta con drenaje?</string>
+  <string name="PREGUNTA29a">Tiene…</string>
+  <string name="PREGUNTA29a1">De agua pluvial</string>
+  <string name="PREGUNTA29a2">De aguas negras</string>
+  <string name="PREGUNTA30">Si la escuela cuenta con drenaje ¿A cuántos metros se encuentra el drenaje más cercano del espacio donde se construiría la cocina prototipo?</string>
+  <string name="PREGUNTA31">¿A cuántos metros se encuentra el tablero eléctrico (interruptor) del espacio donde se construiría la cocina prototipo?</string>
+  <string name="PREGUNTA32"> ¿Este espacio se encuentra cerca de algún acceso y/o de la calle? </string>
+  <string name="PREGUNTA33">¿A cuántos metros se encuentra el espacio donde se construiría la cocina prototipo del acceso y/o de la calle?</string>
+  <string name="PREGUNTA34">Encuestador, en la hoja de registro favor de hacer un croquis donde se construiría la cocina prototipo, indique la actual construcción los accesos y las tomas de drenaje, electricidad señalados en P28, P30, P31 y P33</string>
+  <string name="PREGUNTA35">Foto de CROQUIS </string>
+
+
+  <string name="PREGUNTAABANDONO">¿Tipo de encuesta....?</string> 
+
+    <string name="ns">No sabe / No Contestó</string>
+    <string name="nc">No contestó</string>
+    
+
+</resources>
