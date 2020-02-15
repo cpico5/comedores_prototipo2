@@ -91,6 +91,9 @@ public class FotoEvidencia extends Activity {
 
 	SimpleDateFormat df5 = new SimpleDateFormat("HH:mm:ss");
 	String formattedDateHora = df5.format(c.getTime());
+	
+	UsuariosSQLiteHelper3 usdbh3;
+	private SQLiteDatabase db3;
 
     private ImageButton camara;
     private ImageView imagen;
@@ -471,6 +474,31 @@ public class FotoEvidencia extends Activity {
 ////            wifiManager.setWifiEnabled(true);
 //            wifiManager.setWifiEnabled(false);
         	
+        	
+        	Nombre nom = new Nombre();
+			String nombreE = nom.nombreEncuesta();
+
+			GPSTracker gps = new GPSTracker(this);
+			latitude = gps.getLatitude();
+			longitude = gps.getLongitude();
+
+			String strLatitud = String.valueOf(latitude);
+			String strLongitud = String.valueOf(longitude);
+			
+			
+			if (latitude == 0.0) {
+				latitude = Double.valueOf(sacaLatitud());
+				
+			}
+
+			if (longitude == 0.0) {
+				longitude = Double.valueOf(sacaLongitud());
+				
+			}
+
+			String strLatitud2 = String.valueOf(latitude);
+			String strLongitud2 = String.valueOf(longitude);
+        	
         	 
              String seccion=cachaSeccion();
         
@@ -478,7 +506,7 @@ public class FotoEvidencia extends Activity {
 
              String diario= String.valueOf(elMaximo);
         
-             nombreD = diario+"_"+seccion+"_"+cachaNombre()+"_"+sacaImei()+"_"+date;
+             nombreD = diario+"_"+seccion+"_"+cachaNombre()+"_"+sacaImei()+"_"+date+"_"+strLatitud2+"_"+strLongitud2;
  
             
        
@@ -974,6 +1002,39 @@ public class FotoEvidencia extends Activity {
 		        	 elMaximo = Integer.parseInt(sacaMaximo().toString());
 
 		             String diario= String.valueOf(elMaximo);
+		             
+		             
+		             Nombre nom = new Nombre();
+		 			String nombreE = nom.nombreEncuesta();
+
+		 			GPSTracker gps = new GPSTracker(FotoEvidencia.this);
+		 			latitude = gps.getLatitude();
+		 			longitude = gps.getLongitude();
+
+		 			String strLatitud = String.valueOf(latitude);
+		 			String strLongitud = String.valueOf(longitude);
+		 			
+		 			
+		 			if (latitude == 0.0) {
+		 				latitude = Double.valueOf(sacaLatitud());
+		 				
+		 			}
+
+		 			if (longitude == 0.0) {
+		 				longitude = Double.valueOf(sacaLongitud());
+		 				
+		 			}
+
+		 			String strLatitud2 = String.valueOf(latitude);
+		 			String strLongitud2 = String.valueOf(longitude);
+		         	
+		         	 
+		            nombreD = diario+"_"+seccion+"_"+cachaNombre()+"_"+sacaImei()+"_"+date+"_"+strLatitud2+"_"+strLongitud2;
+		  
+		             
+		             
+		             
+		             
 		        
 		             nombreD = diario+"_"+seccion+"_"+cachaNombre()+"_"+sacaImei()+"_"+date;
 					
@@ -1078,6 +1139,46 @@ try {
 
 }
 
+		
+		private String sacaLatitud() {
+			Set<String> set = new HashSet<String>();
+			String acceso = null;
+			final String F = "File dbfile";
+			// Abrimos la base de datos 'DBUsuarios' en modo escritura
+			usdbh3 = new UsuariosSQLiteHelper3(this);
+			db3 = usdbh3.getReadableDatabase();
+			String selectQuery = "select latitud from ubicacion order by id desc limit 1";
+			Cursor cursor = db3.rawQuery(selectQuery, null);
+			if (cursor.moveToFirst()) {
+				do {
+					acceso = cursor.getString(0);
+				} while (cursor.moveToNext());
+			}
+			cursor.close();
+			// db.close();
+
+			return acceso;
+		}
+
+		private String sacaLongitud() {
+			Set<String> set = new HashSet<String>();
+			String acceso = null;
+			final String F = "File dbfile";
+			// Abrimos la base de datos 'DBUsuarios' en modo escritura
+			usdbh3 = new UsuariosSQLiteHelper3(this);
+			db3 = usdbh3.getReadableDatabase();
+			String selectQuery = "select longitud from ubicacion order by id desc limit 1";
+			Cursor cursor = db3.rawQuery(selectQuery, null);
+			if (cursor.moveToFirst()) {
+				do {
+					acceso = cursor.getString(0);
+				} while (cursor.moveToNext());
+			}
+			cursor.close();
+			// db.close();
+
+			return acceso;
+		}
 
 	
 

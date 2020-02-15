@@ -6499,17 +6499,17 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 	
 	
 	
-	lay90.setVisibility(View.GONE); 
-	lay90a.setVisibility(View.GONE); 
-	lay90b.setVisibility(View.GONE); 
-	lay90c.setVisibility(View.GONE); 
-	lay90d.setVisibility(View.GONE); 
-	lay90e.setVisibility(View.GONE); 
-	lay90f.setVisibility(View.GONE); 
-	lay90g.setVisibility(View.GONE); 
-	lay90h.setVisibility(View.GONE); 
-	lay90i.setVisibility(View.GONE); 
-	lay90j.setVisibility(View.GONE); 
+//	lay90.setVisibility(View.GONE); 
+//	lay90a.setVisibility(View.GONE); 
+//	lay90b.setVisibility(View.GONE); 
+//	lay90c.setVisibility(View.GONE); 
+//	lay90d.setVisibility(View.GONE); 
+//	lay90e.setVisibility(View.GONE); 
+//	lay90f.setVisibility(View.GONE); 
+//	lay90g.setVisibility(View.GONE); 
+//	lay90h.setVisibility(View.GONE); 
+//	lay90i.setVisibility(View.GONE); 
+//	lay90j.setVisibility(View.GONE); 
 }
 
 	public void ocultaAdultos(){
@@ -7542,7 +7542,8 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 
 		case 2:
 		
-			 if (lay2.getVisibility() == 0 && op2.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura2,Toast.LENGTH_LONG).show();}
+			if (lay1.getVisibility() == 0 && op1.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  "Acceso",Toast.LENGTH_LONG).show();}
+			else if (lay2.getVisibility() == 0 && op2.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura2,Toast.LENGTH_LONG).show();}
 			 else if (lay90a.getVisibility()==0 && editPregunta90a.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90a,Toast.LENGTH_LONG).show();}
 			  else if (lay90c.getVisibility() == 0 && editPregunta90b.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90c,Toast.LENGTH_LONG).show();}
 			  else if (lay90b.getVisibility() == 0 && editPregunta90c.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90b,Toast.LENGTH_LONG).show();}
@@ -7565,7 +7566,8 @@ if(op13a_1.equals("No sabe / No contestó") && op13b_1.equals("No sabe / No conte
 		case 3:
 
 
-			 if (lay2.getVisibility() == 0 && op2.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura2,Toast.LENGTH_LONG).show();}
+			if (lay1.getVisibility() == 0 && op1.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  "Acceso",Toast.LENGTH_LONG).show();}
+			else if (lay2.getVisibility() == 0 && op2.matches("sin datos")){Toast.makeText(this,"CAPTURA:  " +  captura2,Toast.LENGTH_LONG).show();}
 			 else if (lay90a.getVisibility()==0 && editPregunta90a.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90a,Toast.LENGTH_LONG).show();}
 			  else if (lay90c.getVisibility() == 0 && editPregunta90b.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90c,Toast.LENGTH_LONG).show();}
 			  else if (lay90b.getVisibility() == 0 && editPregunta90c.getText().toString().trim().equals("")){Toast.makeText(getBaseContext(),"CAPTURA:  " +  captura90b,Toast.LENGTH_LONG).show();}
